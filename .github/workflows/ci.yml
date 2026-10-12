@@ -3,16 +3,42 @@ on:
   pull_request:
   push:
     branches: [main]
-    paths-ignore: ["data/**", "**.md"]
+    paths-ignore: ["data/**", "**.md", "docs/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
         with:
           enable-cache: true
       - run: uv sync --frozen --python 3.12
       - run: uv run ruff check src tests
       - run: uv run pytest -q
+
+  security:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --python 3.12
+      - name: Análisis estático del código (bandit)
+        run: uv run bandit -r src -q -ll
+      - name: Vulnerabilidades conocidas en dependencias (pip-audit)
+        run: uv export --frozen --no-dev --no-emit-project -o /tmp/req.txt && uv run pip-audit -r /tmp/req.txt --no-deps --disable-pip

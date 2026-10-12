@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1140" width="1600" height="1140" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" role="img" aria-label="Arquitectura de Brújula Tech Week">
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/></pattern>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#F8E18E"/></marker>
+<marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9b9b9b"/></marker>
+</defs>
+<rect width="1600" height="1140" fill="#000"/><rect width="1600" height="1140" fill="url(#grid)"/>
+<text x="40" y="52" font-size="12" fill="#F8E18E" font-weight="400" text-anchor="start" letter-spacing="2">[ PORTAFOLIO · INGENIERÍA DE IA ]</text>
+<text x="40" y="92" font-size="34" fill="#ffffff" font-weight="800" text-anchor="start" letter-spacing="0">BRÚJULA // TECH WEEK</text>
+<text x="40" y="118" font-size="13.5" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Recuperación semántica local + ponderación explicable. Sin APIs de IA, sin GPU, sin que el texto del usuario salga del servidor.</text>
+<rect x="20" y="140" width="1560" height="190" fill="none" stroke="#3a3a3a" stroke-dasharray="3 6"/>
+<text x="40" y="168" font-size="13" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="1.5">① INGESTA E ÍNDICE</text>
+<text x="226.79999999999998" y="168" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">offline · al construir la imagen y cada 6 h</text>
+<rect x="40" y="190" width="222" height="103" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="250" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">FUENTE</text>
+<text x="54" y="215" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Luma</text>
+<text x="54" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Calendario público de Perú</text>
+<text x="54" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Tech Week: 105 eventos,</text>
+<text x="54" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">cupos y estado</text>
+<rect x="300" y="190" width="222" height="103" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="510" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">PYTHON</text>
+<text x="314" y="215" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Scraper</text>
+<text x="314" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">httpx con reintentos ante</text>
+<text x="314" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">429, o Crawl4AI + Chromium</text>
+<text x="314" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">con sesión propia</text>
+<rect x="560" y="190" width="222" height="103" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="770" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">DATOS</text>
+<text x="574" y="215" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">events.json</text>
+<text x="574" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Versionado en git. Se</text>
+<text x="574" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">valida el rango y que toda</text>
+<text x="574" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">URL sea de luma.com</text>
+<rect x="820" y="190" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1030" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">AJUSTE</text>
+<text x="834" y="215" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Fragmentador</text>
+<text x="834" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Ventanas de ≤120 tokens</text>
+<text x="834" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">con solape de 16, medidas</text>
+<text x="834" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">con el tokenizador real</text>
+<rect x="1080" y="190" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1290" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">LOCAL</text>
+<text x="1094" y="215" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Embeddings</text>
+<text x="1094" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">fastembed · MiniLM-L12</text>
+<text x="1094" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">multilingüe · ONNX INT8 ·</text>
+<text x="1094" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">384 dimensiones</text>
+<rect x="1340" y="190" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1550" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">VECTORIAL</text>
+<text x="1354" y="215" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">LanceDB</text>
+<text x="1354" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">475 vectores + metadatos</text>
+<text x="1354" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">(día, estado, distrito,</text>
+<text x="1354" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">formato) para prefiltrar</text>
+<line x1="262" y1="232" x2="300" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="522" y1="232" x2="560" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="782" y1="232" x2="820" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1042" y1="232" x2="1080" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1302" y1="232" x2="1340" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="20" y="360" width="1560" height="290" fill="none" stroke="#3a3a3a" stroke-dasharray="3 6"/>
+<text x="40" y="388" font-size="13" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="1.5">② CONSULTA</text>
+<text x="150.0" y="388" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">online · ≈ 50 ms por búsqueda en el servidor (medido)</text>
+<rect x="40" y="405" width="190" height="120" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="218" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">CLIENTE</text>
+<text x="54" y="430" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Navegador</text>
+<text x="54" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">UI en JS puro, sin</text>
+<text x="54" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">librerías. CSP</text>
+<text x="54" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">estricta: solo scripts</text>
+<text x="54" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">propios</text>
+<rect x="262" y="405" width="190" height="120" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="440" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">BORDE</text>
+<text x="276" y="430" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">FastAPI</text>
+<text x="276" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Valida con pydantic,</text>
+<text x="276" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">lista blanca de</text>
+<text x="276" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">distrito, 20</text>
+<text x="276" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">búsquedas/min por IP</text>
+<rect x="484" y="405" width="190" height="103" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="662" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">REGLAS</text>
+<text x="498" y="430" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Intérprete</text>
+<text x="498" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Extrae días, horario,</text>
+<text x="498" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">distrito, formato y</text>
+<text x="498" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">objetivos con reglas</text>
+<rect x="706" y="405" width="190" height="120" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="884" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">LOCAL</text>
+<text x="720" y="430" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Embedding</text>
+<text x="720" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Mismo modelo que el</text>
+<text x="720" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">índice. Solo recibe el</text>
+<text x="720" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">significado, sin lugar</text>
+<text x="720" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">ni hora</text>
+<rect x="928" y="405" width="190" height="120" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1106" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">LANCEDB</text>
+<text x="942" y="430" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Búsqueda</text>
+<text x="942" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Prefiltro SQL +</text>
+<text x="942" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">similitud coseno;</text>
+<text x="942" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">agrega fragmentos por</text>
+<text x="942" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">evento</text>
+<rect x="1150" y="405" width="190" height="120" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="1328" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">SCORING</text>
+<text x="1164" y="430" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Ponderador</text>
+<text x="1164" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">5 criterios con pesos</text>
+<text x="1164" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">que se adaptan al</text>
+<text x="1164" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">prompt. Nota de 0 a</text>
+<text x="1164" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">100</text>
+<rect x="1372" y="405" width="190" height="120" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1550" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">XAI</text>
+<text x="1386" y="430" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Explicador</text>
+<text x="1386" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Rastro</text>
+<text x="1386" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">SEM·OBJ·DISP·ESC·LOG,</text>
+<text x="1386" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">cruces de horario y</text>
+<text x="1386" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">eventos descartados</text>
+<line x1="230" y1="449" x2="262" y2="449" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="452" y1="449" x2="484" y2="449" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="674" y1="449" x2="706" y2="449" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="896" y1="449" x2="928" y2="449" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1118" y1="449" x2="1150" y2="449" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1340" y1="449" x2="1372" y2="449" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M 1467.0 517 V 545 H 135.0 V 517" fill="none" stroke="#86efac" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="801.0" y="537" font-size="12" fill="#86efac" font-weight="400" text-anchor="middle" letter-spacing="0">JSON con puntajes, razones y estado de cada evento  →  la interfaz lo dibuja (todo escapado)</text>
+<line x1="1451.0" y1="286" x2="1023.0" y2="405" stroke="#9b9b9b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ad)"/>
+<text x="1289.0" y="350" font-size="11" fill="#9b9b9b" font-weight="400" text-anchor="middle" letter-spacing="0">mismo índice</text>
+<text x="40" y="618" font-size="12" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Decisiones medidas:</text>
+<text x="210" y="618" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">MiniLM 481 MB vs potion 1.0 GB con calidad equivalente (MRR 0.89 vs 0.89) · servidor 107 MB en reposo y 507 MB con modelo cargado → Cloud Run con 1 GiB</text>
+<text x="210" y="640" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Fragmentador: antes 154 de 381 fragmentos superaban 128 tokens y el modelo los cortaba en silencio; ahora 0 de 475 (máx. 123).</text>
+<rect x="20" y="670" width="1560" height="450" fill="none" stroke="#3a3a3a" stroke-dasharray="3 6"/>
+<text x="40" y="698" font-size="13" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="1.5">③ ENTREGA Y OPERACIÓN</text>
+<text x="255.6" y="698" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">GitHub Actions → Google Cloud · sin llaves guardadas</text>
+<rect x="40" y="720" width="222" height="86" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="250" y="740" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">GITHUB</text>
+<text x="54" y="745" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Pull Request</text>
+<text x="54" y="767" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Cada cambio pasa por CI</text>
+<text x="54" y="784" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">antes de llegar a main</text>
+<rect x="300" y="720" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="510" y="740" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">VERIFICA</text>
+<text x="314" y="745" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">CI</text>
+<text x="314" y="767" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">ruff · pytest (30) ·</text>
+<text x="314" y="784" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">bandit · pip-audit.</text>
+<text x="314" y="801" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Acciones fijadas por SHA</text>
+<rect x="560" y="720" width="222" height="103" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="770" y="740" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">GITHUB</text>
+<text x="574" y="745" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">main</text>
+<text x="574" y="767" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Push dispara el</text>
+<text x="574" y="784" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">despliegue. Dependabot</text>
+<text x="574" y="801" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">abre PRs semanales</text>
+<rect x="820" y="720" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1030" y="740" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">ACTIONS</text>
+<text x="834" y="745" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Deploy</text>
+<text x="834" y="767" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">docker build multi-etapa;</text>
+<text x="834" y="784" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">el índice y el modelo</text>
+<text x="834" y="801" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">viajan dentro de la imagen</text>
+<rect x="1080" y="720" width="222" height="103" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="1290" y="740" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">GCP</text>
+<text x="1094" y="745" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Artifact Registry</text>
+<text x="1094" y="767" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">us-central1 · tags</text>
+<text x="1094" y="784" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">inmutables · escritura</text>
+<text x="1094" y="801" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">solo para el deployer</text>
+<rect x="1340" y="720" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1550" y="740" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">GCP</text>
+<text x="1354" y="745" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Cloud Run</text>
+<text x="1354" y="767" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Usuario 10001 sin root · 1</text>
+<text x="1354" y="784" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">vCPU · 1 GiB · mínimo 0 ·</text>
+<text x="1354" y="801" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">máximo 2 instancias</text>
+<line x1="262" y1="764" x2="300" y2="764" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="522" y1="764" x2="560" y2="764" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="782" y1="764" x2="820" y2="764" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1042" y1="764" x2="1080" y2="764" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1302" y1="764" x2="1340" y2="764" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="820" y="880" width="482" height="112" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1290" y="900" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">SIN LLAVES</text>
+<text x="834" y="905" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Workload Identity Federation (OIDC)</text>
+<text x="834" y="927" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">GitHub presenta un token firmado; Google solo lo acepta del</text>
+<text x="834" y="944" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">repositorio FabrizioVasquez/free-demo-lima-week en la rama</text>
+<text x="834" y="961" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">main. No existe ninguna llave descargable.</text>
+<line x1="931.0" y1="816" x2="931.0" y2="880" stroke="#9b9b9b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ad)"/>
+<text x="975.0" y="872" font-size="11" fill="#9b9b9b" font-weight="400" text-anchor="middle" letter-spacing="0">token OIDC</text>
+<rect x="40" y="880" width="482" height="112" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1"/>
+<text x="510" y="900" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">CRON</text>
+<text x="54" y="905" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" letter-spacing="0">Refresco de datos cada 6 h</text>
+<text x="54" y="927" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Cron re-scrapea Luma, valida el JSON y, si hubo cambios, hace</text>
+<text x="54" y="944" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">commit y lanza el despliegue. Termina el 18-oct-2026.</text>
+<line x1="281" y1="880" x2="671.0" y2="816" stroke="#9b9b9b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ad)"/>
+<text x="562" y="836" font-size="11" fill="#9b9b9b" font-weight="400" text-anchor="middle" letter-spacing="0">commit</text>
+<rect x="1340" y="880" width="222" height="112" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<text x="1550" y="900" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">IAM</text>
+<text x="1354" y="905" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">brujula-runtime</text>
+<text x="1354" y="927" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">La app corre sin ningún</text>
+<text x="1354" y="944" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">rol: aunque alguien</text>
+<text x="1354" y="961" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">ejecutara código, no</text>
+<text x="1354" y="978" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">alcanza nada más.</text>
+<line x1="1451.0" y1="816" x2="1451.0" y2="880" stroke="#9b9b9b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ad)"/>
+<text x="1501.0" y="872" font-size="11" fill="#9b9b9b" font-weight="400" text-anchor="middle" letter-spacing="0">corre como</text>
+<text x="40" y="1036" font-size="12" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Controles de seguridad</text>
+<rect x="40" y="1052" width="172.0" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="52" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">CSP + HSTS + nosniff</text>
+<rect x="222.0" y="1052" width="334.8" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="234.0" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">contenedor no-root, código de solo lectura</text>
+<rect x="566.8" y="1052" width="157.20000000000002" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="578.8" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">lista blanca → SQL</text>
+<rect x="734.0" y="1052" width="149.8" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="746.0" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">rate limit por IP</text>
+<rect x="893.8" y="1052" width="201.60000000000002" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="905.8" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">mínimo privilegio en IAM</text>
+<rect x="1105.4" y="1052" width="112.80000000000001" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="1117.4" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">SHAs fijados</text>
+<rect x="1228.2" y="1052" width="216.4" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="1240.2" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">bandit + pip-audit limpios</text>
+<rect x="40" y="1090" width="231.20000000000002" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="52" y="1108" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">sin secretos en el historial</text>
+</svg>

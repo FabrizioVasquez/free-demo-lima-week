@@ -15,6 +15,7 @@ import re
 import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
+from functools import lru_cache
 
 from .config import EVENTS_JSON
 from .embed import embed
@@ -145,8 +146,14 @@ def now_lima() -> str:
     return os.environ.get("BTW_NOW") or datetime.now(LIMA).strftime(FMT)
 
 
-def load_events() -> dict[str, dict]:
+@lru_cache(maxsize=2)
+def _load(_mtime_ns: int) -> dict[str, dict]:
     return {e["id"]: e for e in json.loads(EVENTS_JSON.read_text(encoding="utf-8"))}
+
+
+def load_events() -> dict[str, dict]:
+    """Se relee solo si events.json cambió (la clave de caché es su fecha de modificación)."""
+    return _load(EVENTS_JSON.stat().st_mtime_ns)
 
 
 def day_label(d: str) -> str:
@@ -284,6 +291,9 @@ def search(
     t0 = time.perf_counter()
     events = load_events()
     cities = sorted({e["city"] for e in events.values() if e["city"]})
+    if (city and city not in cities) or mode not in (None, "presencial", "virtual"):
+        raise ValueError("filtro inválido")  # defensa en profundidad: city/mode acaban en un filtro SQL
+    prompt = prompt[:1500]
     now = now_lima()
     intent = parse_intent(prompt, cities, now)
 

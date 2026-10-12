@@ -1,9 +1,14 @@
 .venv
 .git
 .github
+.gcloudignore
 data/lancedb
 data/models
 data/browser-profile
 tests
+docs
 __pycache__
+.pytest_cache
+.ruff_cache
+.env
 *.md
