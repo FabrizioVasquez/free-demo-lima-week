@@ -1,12 +1,18 @@
-"""Fragmenta cada evento por tokens, lo convierte en vectores y lo guarda en LanceDB (local)."""
+"""Fragmenta cada evento por tokens, lo convierte en vectores y lo guarda en Qdrant (modo local, en disco)."""
 from __future__ import annotations
 
+import atexit
 import json
 import re
+import shutil
+import tempfile
+from datetime import datetime, timedelta, timezone
+from functools import lru_cache
+from pathlib import Path
 
-import lancedb
+from qdrant_client import QdrantClient, models
 
-from .config import DB_DIR, EVENTS_JSON, TABLE
+from .config import COLLECTION, EVENTS_JSON, QDRANT_DIR
 from .embed import embed, tokenizer
 
 # El modelo (paraphrase-multilingual-MiniLM-L12-v2) se entrenó con 128 tokens: lo que pase de ahí se descarta en silencio.
@@ -14,6 +20,12 @@ BUDGET = 120  # 128 menos margen para tokens especiales
 OVERLAP = 16  # tokens compartidos entre fragmentos vecinos, para no cortar una idea por la mitad
 MAX_CHUNKS = 12
 MAX_HEAD_TOKENS = 48
+LIMA = timezone(timedelta(hours=-5))
+
+
+def to_ts(s: str) -> int:
+    """'2026-10-15 18:30' (hora de Lima) -> segundos Unix. Qdrant filtra rangos con números, no con texto."""
+    return int(datetime.strptime(s, "%Y-%m-%d %H:%M").replace(tzinfo=LIMA).timestamp())
 
 
 def chunks_of(ev: dict, tok) -> list[tuple[str, str]]:
@@ -47,22 +59,47 @@ def chunks_of(ev: dict, tok) -> list[tuple[str, str]]:
 def build() -> int:
     events = json.loads(EVENTS_JSON.read_text(encoding="utf-8"))
     tok = tokenizer()
-    rows, texts = [], []
+    payloads, texts = [], []
     for ev in events:
         for n, (text, body) in enumerate(chunks_of(ev, tok)):
             texts.append(text)
-            rows.append({
-                "event_id": ev["id"], "chunk_no": n, "text": text, "body": body,
-                "day": ev["start"][:10], "start": ev["start"], "end": ev["end"],
+            payloads.append({
+                "event_id": ev["id"], "chunk_no": n, "body": body,
                 "status": ev["status"], "city": ev["city"], "mode": ev["mode"],
+                "start_ts": to_ts(ev["start"]), "end_ts": to_ts(ev["end"]),
             })
     vecs = embed(texts)
-    for r, v in zip(rows, vecs, strict=True):
-        r["vector"] = v.tolist()
-    DB_DIR.mkdir(parents=True, exist_ok=True)
-    lancedb.connect(str(DB_DIR)).create_table(TABLE, data=rows, mode="overwrite")
-    return len(rows)
+    if QDRANT_DIR.exists():
+        shutil.rmtree(QDRANT_DIR)
+    QDRANT_DIR.parent.mkdir(parents=True, exist_ok=True)
+    client = QdrantClient(path=str(QDRANT_DIR))
+    try:
+        client.create_collection(COLLECTION, vectors_config=models.VectorParams(size=int(vecs.shape[1]), distance=models.Distance.COSINE))
+        client.upload_points(COLLECTION, points=[
+            models.PointStruct(id=i, vector=v.tolist(), payload=p) for i, (v, p) in enumerate(zip(vecs, payloads, strict=True))
+        ])
+    finally:
+        client.close()
+    return len(payloads)
 
 
-def table():
-    return lancedb.connect(str(DB_DIR)).open_table(TABLE)
+@lru_cache(maxsize=1)
+def get_client() -> QdrantClient:
+    """Abre el índice desde una COPIA en un directorio temporal (~1 MB).
+
+    El modo local de Qdrant necesita escribir un archivo `.lock`; así la imagen puede ser de solo lectura
+    y tampoco hay choque si `btw index` reconstruye el índice mientras el servidor corre.
+    """
+    if not QDRANT_DIR.exists():
+        raise FileNotFoundError("No hay índice: ejecuta `uv run btw index`")
+    tmp = Path(tempfile.mkdtemp(prefix="btw-qdrant-"))
+    shutil.copytree(QDRANT_DIR, tmp / "db")
+    atexit.register(shutil.rmtree, tmp, True)  # atexit corre al revés: primero se cierra el cliente, luego se borra la copia
+    client = QdrantClient(path=str(tmp / "db"))
+    atexit.register(client.close)
+    return client
+
+
+def query(vector, flt: models.Filter | None = None, limit: int = 2000):
+    """Búsqueda por similitud coseno con filtro tipado opcional. Devuelve puntos con `.score` (similitud) y `.payload`."""
+    return get_client().query_points(COLLECTION, query=list(map(float, vector)), query_filter=flt, limit=limit, with_payload=True).points

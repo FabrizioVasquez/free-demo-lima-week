@@ -65,7 +65,7 @@ class Query(BaseModel):
     @field_validator("city")
     @classmethod
     def _city(cls, v: str | None) -> str | None:
-        # lista blanca: el distrito acaba dentro de un filtro SQL de LanceDB, así que solo se aceptan valores que ya existen
+        # lista blanca: solo se aceptan distritos que existen (defensa en profundidad; el filtro de Qdrant ya es tipado)
         if v and v not in {e["city"] for e in load_events().values()}:
             raise ValueError("distrito desconocido")
         return v or None
@@ -96,7 +96,7 @@ async def guard(request: Request, call_next):
 @app.get("/api/status")
 def status():
     ev = load_events().values()
-    return {"events": len(ev), "model": MODEL, "db": "LanceDB (local)", "now": now_lima(),
+    return {"events": len(ev), "model": MODEL, "db": "Qdrant (local)", "now": now_lima(),
             "cities": sorted({e["city"] for e in ev if e["city"]})}
 
 

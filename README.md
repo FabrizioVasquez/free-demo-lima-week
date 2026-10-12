@@ -4,7 +4,7 @@ Recomendador de eventos de **Perú Tech Week 2026** (12–18 oct, Lima). Escribe
 
 ![Arquitectura](docs/architecture.svg)
 
-- **Búsqueda semántica local:** LanceDB + embeddings multilingües (`fastembed`, ONNX). Sin API keys, sin GPU, y el texto del usuario no sale del servidor.
+- **Búsqueda semántica local:** Qdrant (modo local) + embeddings multilingües (`fastembed`, ONNX). Sin API keys, sin GPU, y el texto del usuario no sale del servidor.
 - **Razonamiento visible:** cada evento recibe nota en 5 criterios con pesos que se adaptan a tu prompt. Ves la matriz, el rastro `[SEM] [OBJ] [DISP] [ESC] [LOG]`, los choques de horario y los eventos descartados con su motivo.
 - **Cupos y agotados** vienen de Luma, no de un modelo.
 - **Seguridad y coste pensados desde el inicio:** ver [SECURITY.md](docs/SECURITY.md) y [Costes](#costes).
@@ -18,7 +18,7 @@ Documentación: [Arquitectura](docs/ARCHITECTURE.md) · [Cómo se construyó, pa
 | Lenguaje y paquetes | **Python 3.12** · **uv** | Entorno reproducible con `uv.lock` |
 | Datos | `httpx` · **Crawl4AI** (opcional) | Scraping de Luma, con o sin navegador y sesión |
 | Embeddings | **fastembed** · `paraphrase-multilingual-MiniLM-L12-v2` | Texto → vector de 384 dimensiones, ONNX INT8 |
-| Base vectorial | **LanceDB** | Vectores + metadatos con prefiltros SQL, en un directorio local |
+| Base vectorial | **Qdrant** (modo local) | Vectores + metadatos con filtros **tipados** (sin SQL), en un directorio local |
 | API | **FastAPI** · pydantic · uvicorn | Validación estricta, límite de tasa, cabeceras de seguridad |
 | Interfaz | HTML + CSS + JS sin librerías | CSP estricta, sin cadena de suministro en el navegador |
 | Calidad | ruff · pytest · bandit · pip-audit | 30 pruebas y análisis de seguridad en CI |
@@ -33,7 +33,7 @@ sequenceDiagram
   participant API as FastAPI
   participant NLU as Intérprete (reglas)
   participant EMB as fastembed (MiniLM)
-  participant DB as LanceDB
+  participant DB as Qdrant
   participant SC as Ponderador y explicador
   U->>UI: escribe perfil y objetivos
   UI->>API: POST /api/search {prompt, filtros}
@@ -42,7 +42,7 @@ sequenceDiagram
   NLU-->>API: días, horario, distrito, formato, objetivos, top N
   API->>EMB: embed(consulta sin lugar ni hora)
   EMB-->>API: vector de 384 dimensiones
-  API->>DB: search(vector).where(prefiltros SQL)
+  API->>DB: query_points(vector, filtro tipado)
   DB-->>API: fragmentos con similitud coseno
   API->>SC: agrupa por evento, puntúa 5 criterios, arma el rastro
   SC-->>API: ranking, razones, cruces y descartados
@@ -50,7 +50,7 @@ sequenceDiagram
   UI-->>U: matriz, tarjetas con rastro, descartados
 ```
 
-En paralelo existe un camino **offline** (diagrama de arriba, carril ①): `Luma → scraper → events.json → fragmentador → embeddings → LanceDB`. Se ejecuta al construir la imagen y, durante la semana del evento, cada 6 h.
+En paralelo existe un camino **offline** (diagrama de arriba, carril ①): `Luma → scraper → events.json → fragmentador → embeddings → Qdrant`. Se ejecuta al construir la imagen y, durante la semana del evento, cada 6 h.
 
 ## Inicio rápido
 
@@ -77,7 +77,7 @@ Modo navegador: instala Chromium una vez con `uv run --extra browser python -m p
 ## Cómo decide
 
 1. **Interpreta tu prompt:** días, horario, distrito, formato, "top N" y objetivos (aprender, networking, empleo, inversión, construir).
-2. **Recupera** fragmentos desde LanceDB con prefiltros (terminados, días, agotados, formato, distrito). Al índice solo le llega el *significado* de tu texto; el lugar y la hora los evalúa la logística.
+2. **Recupera** fragmentos desde Qdrant con filtros tipados (terminados, días, agotados, formato, distrito). Al índice solo le llega el *significado* de tu texto; el lugar y la hora los evalúa la logística.
 3. **Pondera** 5 criterios. Los pesos cambian según lo que pides.
 4. **Explica** cada nota y lista los eventos parecidos que quedaron fuera. Las fórmulas están en [ARCHITECTURE.md](docs/ARCHITECTURE.md#cómo-se-calcula-la-nota).
 
@@ -88,7 +88,7 @@ docker build -t brujula:local .
 docker run --rm -p 8080:8080 brujula:local          # http://localhost:8080
 ```
 
-La imagen es multi-etapa: la primera instala dependencias, descarga el modelo y genera el índice; la final solo lleva lo necesario, corre como usuario `10001` sin shell y **no necesita red** al arrancar (`HF_HUB_OFFLINE=1`).
+La imagen pesa **612 MB** (antes 941 MB con LanceDB) y es multi-etapa: la primera instala dependencias, descarga el modelo y genera el índice; la final solo lleva lo necesario, corre como usuario `10001` sin shell y **no necesita red** al arrancar (`HF_HUB_OFFLINE=1`).
 
 ### Verificación de la imagen
 
@@ -115,7 +115,7 @@ from brujula.search import search; print(len(search('agentes de IA', top_n=3)['r
 
 Resumen; el detalle con cada amenaza, control y prueba está en [SECURITY.md](docs/SECURITY.md).
 
-- **Entrada:** pydantic estricto (`extra=forbid`), días con regex, formato en lista cerrada, distrito en lista blanca (acaba en un filtro SQL), cuerpo ≤ 8 KB.
+- **Entrada:** pydantic estricto (`extra=forbid`), días con regex, formato en lista cerrada, distrito en lista blanca, cuerpo ≤ 8 KB; los filtros de Qdrant son objetos tipados, **no se construye ningún texto SQL**.
 - **Navegador:** CSP sin `unsafe-eval` ni scripts en línea, HSTS, `nosniff`, `X-Frame-Options: DENY`; todo texto de terceros se escapa.
 - **Abuso:** 20 búsquedas/min por IP, `--max-instances=2`, `--timeout=30s`.
 - **Contenedor:** multi-etapa, usuario sin privilegios, código de solo lectura, sin `uv` ni compiladores en la imagen final.
@@ -128,7 +128,8 @@ Resumen; el detalle con cada amenaza, control y prueba está en [SECURITY.md](do
 |---|---|
 | Embeddings | **Locales**: $0 por consulta y el texto no sale. MiniLM (481 MB) sobre potion (1.0 GB) con calidad equivalente en 15 consultas |
 | Región | `us-central1` (nivel 1): según el catálogo oficial, ~40 % menos por vCPU-s y GiB-s que `southamerica-west1` |
-| Memoria | Medido en el contenedor (Linux): **665 MiB** con el modelo cargado y 12 búsquedas → **1 GiB** (35 % de margen) |
+| Memoria | Medido en el contenedor (Linux): **~640 MiB** con el modelo cargado y 12 búsquedas → **1 GiB** (35 % de margen) |
+| Imagen | **612 MB**: se cambió LanceDB+PyArrow (310 MB) por Qdrant local (≈ 48 MB con gRPC) y se quitaron pip, tests de librerías y herramientas no usadas |
 | Escala | `min-instances=0` (no pagas sin tráfico), `max-instances=2` (tope de gasto) |
 
 > Recomendado: crear una alerta de presupuesto en Google Cloud.
@@ -165,7 +166,7 @@ src/brujula/   config · scrape · embed · index · search · security · serve
 tests/         intérprete de prompts · fragmentador · seguridad de la API
 docs/          architecture.svg · ARCHITECTURE · BUILD_STEPS · SECURITY
 scripts/       gcp-setup.sh · bench_embeddings.py
-data/          events.json (versionado) · lancedb/ y models/ (se regeneran)
+data/          events.json (versionado) · qdrant/ y models/ (se regeneran)
 .github/       ci.yml · deploy.yml · refresh-data.yml · dependabot.yml
 ```
 

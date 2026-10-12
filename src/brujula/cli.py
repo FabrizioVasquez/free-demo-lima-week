@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 
-from .config import DB_DIR, EVENTS_JSON
+from .config import EVENTS_JSON, QDRANT_DIR
 
 
 def _ensure(refresh: bool = False, browser: bool = False) -> None:
@@ -12,9 +12,9 @@ def _ensure(refresh: bool = False, browser: bool = False) -> None:
     if refresh or not EVENTS_JSON.exists():
         print("→ Descargando eventos de Luma…")
         print(f"  {len(scrape.run(browser=browser))} eventos guardados en {EVENTS_JSON}")
-    if refresh or not DB_DIR.exists():
-        print("→ Generando vectores y base LanceDB (la primera vez baja el modelo, ~220 MB)…")
-        print(f"  {index.build()} fragmentos indexados en {DB_DIR}")
+    if refresh or not QDRANT_DIR.exists():
+        print("→ Generando vectores y base vectorial Qdrant (la primera vez baja el modelo, ~220 MB)…")
+        print(f"  {index.build()} fragmentos indexados en {QDRANT_DIR}")
 
 
 def main() -> None:
@@ -46,7 +46,7 @@ def main() -> None:
     elif args.cmd == "index":
         from . import index
 
-        print(f"{index.build()} fragmentos indexados en {DB_DIR}")
+        print(f"{index.build()} fragmentos indexados en {QDRANT_DIR}")
     elif args.cmd == "refresh":
         _ensure(refresh=True, browser=args.browser)
     elif args.cmd == "serve":

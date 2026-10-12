@@ -9,20 +9,21 @@
 | `scrape.py` | Descarga los eventos de Luma | `httpx` · `Crawl4AI` (opcional) | httpx es rápido y sin navegador; Crawl4AI cubre el caso en que Luma exija sesión |
 | `index.py` | Fragmenta por tokens y escribe el índice | `tokenizers` | Medir con el tokenizador del modelo evita que el texto se corte en silencio |
 | `embed.py` | Texto → vector de 384 dimensiones | `fastembed` (ONNX INT8) + `paraphrase-multilingual-MiniLM-L12-v2` | Local, multilingüe, 481 MB, sin API ni GPU (ver *Decisiones*) |
-| `index.py` / `search.py` | Búsqueda vectorial con prefiltro | **LanceDB** | Embebida, sin servidor, ficheros planos, prefiltros SQL; ideal para ~500 vectores |
+| `index.py` / `search.py` | Búsqueda vectorial con filtro | **Qdrant** (modo local) | Embebida, sin servidor, filtros tipados (sin SQL) y muy liviana; ideal para ~500 vectores |
 | `search.py` | Intérprete, ponderador y explicador | Python puro | Reglas auditables: cada nota se puede explicar con una frase |
 | `server.py` / `security.py` | API, validación, límites, cabeceras | `FastAPI` · `pydantic` | Validación declarativa y 422 automático |
 | `static/` | Interfaz | HTML + CSS + JS sin librerías | Cero cadena de suministro en el navegador; CSP estricta |
 
-## Esquema del índice (tabla `event_chunks`)
+## Esquema del índice (colección `event_chunks`)
 
-| Columna | Tipo | Uso |
+Cada punto es un fragmento de un evento: un **vector** de 384 floats (distancia coseno) más un *payload* con los datos para filtrar y mostrar.
+
+| Campo del payload | Tipo | Uso |
 |---|---|---|
-| `vector` | float32[384] | Similitud coseno |
-| `event_id`, `chunk_no` | string, int | Agrupar fragmentos por evento |
-| `text`, `body` | string | Lo que se vectorizó y el fragmento sin cabecera (para mostrar) |
-| `day`, `start`, `end` | string `YYYY-MM-DD HH:MM` (hora de Lima) | Prefiltros; comparan bien como texto |
-| `status`, `city`, `mode` | string | Prefiltros |
+| `event_id`, `chunk_no` | texto, entero | Agrupar fragmentos por evento |
+| `body` | texto | Fragmento sin cabecera, para mostrarlo como evidencia |
+| `start_ts`, `end_ts` | entero (segundos Unix, hora de Lima) | Filtros por día y por "ya terminó"; Qdrant filtra rangos con números |
+| `status`, `city`, `mode` | texto | Filtros de estado, distrito y formato |
 
 ## Ciclo de una consulta
 
@@ -33,7 +34,7 @@ sequenceDiagram
   participant API as FastAPI
   participant NLU as Intérprete (reglas)
   participant EMB as fastembed (MiniLM)
-  participant DB as LanceDB
+  participant DB as Qdrant
   participant SC as Ponderador y explicador
   U->>UI: escribe perfil y objetivos
   UI->>API: POST /api/search {prompt, filtros}
@@ -42,7 +43,7 @@ sequenceDiagram
   NLU-->>API: días, horario, distrito, formato, objetivos, top N
   API->>EMB: embed(consulta sin lugar ni hora)
   EMB-->>API: vector de 384 dimensiones
-  API->>DB: search(vector).where(prefiltros SQL)
+  API->>DB: query_points(vector, filtro tipado)
   DB-->>API: fragmentos con similitud coseno
   API->>SC: agrupa por evento, puntúa 5 criterios, arma el rastro
   SC-->>API: ranking, razones, cruces y descartados
@@ -77,7 +78,8 @@ Los pesos se adaptan: sin objetivos explícitos el peso de *objetivo* pasa a *se
 
 La latencia no es el factor de coste (Cloud Run factura por tramos de 100 ms); sí lo son el tamaño de la imagen, el arranque en frío y la memoria, donde gana MiniLM. Con 15 consultas la diferencia de calidad es ruido.
 
-**LanceDB en lugar de Chroma, FAISS o pgvector.** Sin proceso aparte ni dependencia de red, formato columnar con prefiltros SQL y un directorio que cabe en la imagen. Con cientos de vectores la búsqueda exacta es instantánea; no hace falta un índice aproximado.
+**Qdrant en modo local en lugar de LanceDB, Chroma, FAISS o pgvector.** Primero se usó LanceDB; al medir la imagen, LanceDB + PyArrow ocupaban 310 MB (59 % de las librerías) para guardar 475 vectores. Con Qdrant local el entorno de Python bajó de **532 MB a 193 MB** y la imagen de **941 MB a 612 MB**. Además los filtros son objetos tipados, así que no hay texto SQL que pueda inyectarse. Con cientos de vectores la búsqueda exacta es instantánea; no hace falta un índice aproximado.
+Limitación conocida: el modo local está pensado para colecciones pequeñas (decenas de miles de puntos como mucho) y necesita escribir un archivo `.lock`; por eso al arrancar se abre una **copia** del índice (~2 MB) en `/tmp`, lo que permite una imagen de solo lectura. Si el catálogo creciera mucho, el siguiente paso sería un servidor de Qdrant.
 
 **Reglas en lugar de un LLM para explicar.** Cada frase del rastro sale de un cálculo verificable, no de texto generado. Evita alucinaciones y el coste por consulta. El límite es la comprensión del lenguaje: el intérprete reconoce lo que sus reglas cubren.
 

@@ -41,12 +41,13 @@
 <text x="1094" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">fastembed · MiniLM-L12</text>
 <text x="1094" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">multilingüe · ONNX INT8 ·</text>
 <text x="1094" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">384 dimensiones</text>
-<rect x="1340" y="190" width="222" height="103" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
+<rect x="1340" y="190" width="222" height="120" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
 <text x="1550" y="210" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">VECTORIAL</text>
-<text x="1354" y="215" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">LanceDB</text>
+<text x="1354" y="215" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Qdrant (local)</text>
 <text x="1354" y="237" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">475 vectores + metadatos</text>
-<text x="1354" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">(día, estado, distrito,</text>
-<text x="1354" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">formato) para prefiltrar</text>
+<text x="1354" y="254" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">(estado, distrito,</text>
+<text x="1354" y="271" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">formato, inicio y fin)</text>
+<text x="1354" y="288" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">para filtrar</text>
 <line x1="262" y1="232" x2="300" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
 <line x1="522" y1="232" x2="560" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
 <line x1="782" y1="232" x2="820" y2="232" stroke="#F8E18E" stroke-width="1.5" marker-end="url(#a)"/>
@@ -83,9 +84,9 @@
 <text x="720" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">significado, sin lugar</text>
 <text x="720" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">ni hora</text>
 <rect x="928" y="405" width="190" height="120" fill="#0a0a0a" stroke="#F8E18E" stroke-width="1.6"/>
-<text x="1106" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">LANCEDB</text>
+<text x="1106" y="425" font-size="10.5" fill="#9b9b9b" font-weight="400" text-anchor="end" letter-spacing="1">QDRANT</text>
 <text x="942" y="430" font-size="15" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Búsqueda</text>
-<text x="942" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Prefiltro SQL +</text>
+<text x="942" y="452" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Filtro tipado +</text>
 <text x="942" y="469" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">similitud coseno;</text>
 <text x="942" y="486" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">agrega fragmentos por</text>
 <text x="942" y="503" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">evento</text>
@@ -114,8 +115,8 @@
 <line x1="1451.0" y1="286" x2="1023.0" y2="405" stroke="#9b9b9b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ad)"/>
 <text x="1289.0" y="350" font-size="11" fill="#9b9b9b" font-weight="400" text-anchor="middle" letter-spacing="0">mismo índice</text>
 <text x="40" y="618" font-size="12" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Decisiones medidas:</text>
-<text x="210" y="618" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">MiniLM 481 MB vs potion 1.0 GB con calidad equivalente (MRR 0.89 vs 0.89) · servidor en contenedor Linux: 665 MiB con el modelo cargado → Cloud Run con 1 GiB</text>
-<text x="210" y="640" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Fragmentador: antes 154 de 381 fragmentos superaban 128 tokens y el modelo los cortaba en silencio; ahora 0 de 475 (máx. 123).</text>
+<text x="210" y="618" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">MiniLM 481 MB vs potion 1.0 GB con calidad equivalente (MRR 0.89 vs 0.89) · contenedor Linux: ~640 MiB con el modelo cargado → Cloud Run con 1 GiB</text>
+<text x="210" y="640" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Fragmentador: antes 154 de 381 fragmentos superaban 128 tokens y se cortaban en silencio; ahora 0 de 475. Imagen: 941 MB → 612 MB al cambiar LanceDB por Qdrant.</text>
 <rect x="20" y="670" width="1560" height="450" fill="none" stroke="#3a3a3a" stroke-dasharray="3 6"/>
 <text x="40" y="698" font-size="13" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="1.5">③ ENTREGA Y OPERACIÓN</text>
 <text x="255.6" y="698" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">GitHub Actions → Google Cloud · sin llaves guardadas</text>
@@ -188,16 +189,16 @@
 <text x="52" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">CSP + HSTS + nosniff</text>
 <rect x="222.0" y="1052" width="334.8" height="28" fill="none" stroke="#3a3a3a"/>
 <text x="234.0" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">contenedor no-root, código de solo lectura</text>
-<rect x="566.8" y="1052" width="157.20000000000002" height="28" fill="none" stroke="#3a3a3a"/>
-<text x="578.8" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">lista blanca → SQL</text>
-<rect x="734.0" y="1052" width="149.8" height="28" fill="none" stroke="#3a3a3a"/>
-<text x="746.0" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">rate limit por IP</text>
-<rect x="893.8" y="1052" width="201.60000000000002" height="28" fill="none" stroke="#3a3a3a"/>
-<text x="905.8" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">mínimo privilegio en IAM</text>
-<rect x="1105.4" y="1052" width="112.80000000000001" height="28" fill="none" stroke="#3a3a3a"/>
-<text x="1117.4" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">SHAs fijados</text>
-<rect x="1228.2" y="1052" width="216.4" height="28" fill="none" stroke="#3a3a3a"/>
-<text x="1240.2" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">bandit + pip-audit limpios</text>
+<rect x="566.8" y="1052" width="201.60000000000002" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="578.8" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">filtros tipados, sin SQL</text>
+<rect x="778.4" y="1052" width="149.8" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="790.4" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">rate limit por IP</text>
+<rect x="938.2" y="1052" width="201.60000000000002" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="950.2" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">mínimo privilegio en IAM</text>
+<rect x="1149.8000000000002" y="1052" width="112.80000000000001" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="1161.8000000000002" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">SHAs fijados</text>
+<rect x="1272.6000000000001" y="1052" width="216.4" height="28" fill="none" stroke="#3a3a3a"/>
+<text x="1284.6000000000001" y="1070" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">bandit + pip-audit limpios</text>
 <rect x="40" y="1090" width="231.20000000000002" height="28" fill="none" stroke="#3a3a3a"/>
 <text x="52" y="1108" font-size="12" fill="#ffffff" font-weight="400" text-anchor="start" letter-spacing="0">sin secretos en el historial</text>
 </svg>

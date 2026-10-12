@@ -12,8 +12,8 @@ Cada paso dice qué se hizo, qué falló o se midió y qué se decidió. Es el r
 **Qué:** se compararon `paraphrase-multilingual-MiniLM-L12-v2` y `potion-multilingual-128M` con 15 consultas de respuesta conocida (`scripts/bench_embeddings.py`).
 **Medido:** calidad equivalente (MRR 0.89 en ambos); MiniLM pesa la mitad y usa menos memoria. Se eligió MiniLM. Detalle en [ARCHITECTURE.md](ARCHITECTURE.md#decisiones).
 
-## 3. Indexar en LanceDB
-**Qué:** cada evento se divide en fragmentos y se guarda con su vector y metadatos (día, estado, distrito, formato) para poder prefiltrar con SQL.
+## 3. Indexar en una base vectorial
+**Qué:** cada evento se divide en fragmentos y se guarda con su vector y metadatos (estado, distrito, formato, inicio y fin) para poder filtrar antes de buscar. Primero con LanceDB; después se cambió a Qdrant (paso 9).
 **Falló (y no se veía):** el primer fragmentador cortaba por **70 palabras**. Al medir con el tokenizador real, **154 de 381 fragmentos (40 %) superaban los 128 tokens** del modelo, hasta 179, y el modelo descartaba el final en silencio.
 **Decisión:** fragmentador por **tokens** (≤120, solape de 16) que mide con el mismo tokenizador. Resultado: 0 de 475 fragmentos sobre el límite, máximo 123. La calidad no cambió (MRR 0.894 → 0.890); fue un arreglo de corrección.
 
@@ -40,7 +40,13 @@ Validación estricta de entrada, lista blanca de distrito (el valor acaba en un 
 ## 8. Calibrar el coste
 Memoria medida: en macOS ~507 MB, pero **en el contenedor Linux fueron 665 MiB** (la cifra que importa); `1 GiB` en Cloud Run deja un 35 % de margen. El primer intento de medir en el Mac subestimaba. La región `us-central1` es de nivel 1 de precios: según el catálogo oficial cuesta ~40 % menos por vCPU-segundo y GiB-segundo que `southamerica-west1`. Con `min-instances=0` no se paga mientras nadie la usa.
 
-## 9. Automatizar
+## 9. Adelgazar la imagen (941 MB → 612 MB)
+**Medido:** dentro de la imagen, LanceDB (157 MB) y PyArrow (153 MB) sumaban 310 MB, el 59 % de las librerías, para guardar 475 vectores. El modelo (224 MB) y `onnxruntime` no se pueden recortar sin perder calidad.
+**Decisión:** cambiar a **Qdrant en modo local** (entorno de Python 532 MB → 193 MB). Qdrant filtra con objetos tipados, lo que elimina además el riesgo de inyección SQL.
+**Sorpresa:** el modo local escribe un `.lock` y falla en un sistema de ficheros de solo lectura. Solución: abrir una copia del índice (2 MB) en `/tmp` al arrancar.
+**Recortes extra:** se quitaron `pip`, `setuptools`, IDLE/Tk, las carpetas `tests/` de las librerías y `hf_xet` (la app corre sin red). Resultado verificado con la misma batería endurecida: usuario sin root, solo lectura, sin red, sin errores.
+
+## 10. Automatizar
 - **CI:** `ruff`, `pytest` (30 pruebas), `bandit`, `pip-audit`.
 - **Refresco de datos cada 6 h:** re-scrapea, valida el JSON y, si cambió algo, hace commit y lanza el despliegue.
 - **Despliegue:** construye la imagen, la sube a Artifact Registry y actualiza Cloud Run, autenticándose por OIDC.

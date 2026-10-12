@@ -1,7 +1,7 @@
 """Búsqueda semántica + ponderación explicable.
 
 1. Interpreta el prompt (días, horario, distrito, formato, objetivos).
-2. Recupera fragmentos similares desde LanceDB (vectores locales) con prefiltros.
+2. Recupera fragmentos similares desde Qdrant (vectores locales) con filtros tipados.
 3. Puntúa cada evento en 5 criterios con pesos que se adaptan a lo que pediste.
 4. Devuelve el rastro de razonamiento de cada decisión, incluidos los eventos descartados.
 """
@@ -17,9 +17,11 @@ import unicodedata
 from datetime import datetime, timedelta, timezone
 from functools import lru_cache
 
+from qdrant_client import models
+
 from .config import EVENTS_JSON
 from .embed import embed
-from .index import table
+from .index import query, to_ts
 
 LIMA = timezone(timedelta(hours=-5))
 FMT = "%Y-%m-%d %H:%M"
@@ -275,8 +277,25 @@ def overlap(ev: dict, kws: list[str]) -> list[str]:
 
 
 # ---------------------------------------------------------------- búsqueda
-def _sql_str(s: str) -> str:
-    return "'" + s.replace("'", "''") + "'"
+def build_filter(now: str, days: list[str], include_soldout: bool, hide_ended: bool, mode: str | None, city: str | None) -> models.Filter | None:
+    """Filtro tipado de Qdrant. No se concatena texto: cada valor viaja como dato, no como parte de una consulta."""
+    must: list = []
+    if hide_ended:
+        must.append(models.FieldCondition(key="end_ts", range=models.Range(gte=to_ts(now))))
+    if days:  # el evento se solapa con alguno de los días pedidos
+        must.append(models.Filter(should=[
+            models.Filter(must=[
+                models.FieldCondition(key="start_ts", range=models.Range(lte=to_ts(f"{d} 23:59"))),
+                models.FieldCondition(key="end_ts", range=models.Range(gte=to_ts(f"{d} 00:00"))),
+            ]) for d in days
+        ]))
+    if not include_soldout:
+        must.append(models.FieldCondition(key="status", match=models.MatchValue(value="abierto")))
+    if mode:
+        must.append(models.FieldCondition(key="mode", match=models.MatchValue(value=mode)))
+    if city:
+        must.append(models.FieldCondition(key="city", match=models.MatchValue(value=city)))
+    return models.Filter(must=must) if must else None
 
 
 def search(
@@ -292,7 +311,7 @@ def search(
     events = load_events()
     cities = sorted({e["city"] for e in events.values() if e["city"]})
     if (city and city not in cities) or mode not in (None, "presencial", "virtual"):
-        raise ValueError("filtro inválido")  # defensa en profundidad: city/mode acaban en un filtro SQL
+        raise ValueError("filtro inválido")  # defensa en profundidad (la API ya valida con lista blanca)
     prompt = prompt[:1500]
     now = now_lima()
     intent = parse_intent(prompt, cities, now)
@@ -302,35 +321,17 @@ def search(
     top_n = top_n or intent["top_n"] or 5
     kws = keywords(prompt)
 
-    # --- prefiltros (se ejecutan dentro de LanceDB)
-    where = []
-    if hide_ended:
-        where.append(f"`end` >= {_sql_str(now)}")
-    if eff_days:
-        where.append(
-            "(" + " OR ".join(f"(`start` <= {_sql_str(d + ' 23:59')} AND `end` >= {_sql_str(d + ' 00:00')})" for d in eff_days) + ")"
-        )
-    if not include_soldout:
-        where.append("status = 'abierto'")
     if not mode and intent["mode_hard"]:
         mode = intent["mode"]  # "solo virtual" en el texto se trata como filtro, no como preferencia
-    if mode:
-        where.append(f"mode = {_sql_str(mode)}")
-    if city:
-        where.append(f"city = {_sql_str(city)}")
+    flt = build_filter(now, eff_days, include_soldout, hide_ended, mode, city)
 
     sem_q = semantic_query(prompt, cities)
     qvec = embed([sem_q])[0]
-    tbl = table()
-    q = tbl.search(qvec).metric("cosine")
-    if where:
-        q = q.where(" AND ".join(where), prefilter=True)
-    rows = q.limit(2000).to_list()
     best: dict[str, dict] = {}
-    for r in rows:
-        sim = 1 - float(r["_distance"])
-        if r["event_id"] not in best or sim > best[r["event_id"]]["sim"]:
-            best[r["event_id"]] = {"sim": sim, "body": r["body"]}
+    for pt in query(qvec, flt):
+        sim, eid = float(pt.score), pt.payload["event_id"]
+        if eid not in best or sim > best[eid]["sim"]:
+            best[eid] = {"sim": sim, "body": pt.payload["body"]}
 
     # --- pesos que se adaptan a la petición
     w = dict(W_BASE)
@@ -491,10 +492,10 @@ def search(
     # --- por qué quedaron fuera los más cercanos semánticamente
     cut = top[-1]["total"] if top else 0
     chosen = {t["ev"]["id"] for t in top}
-    full = tbl.search(qvec).metric("cosine").limit(2000).to_list()
     near: dict[str, float] = {}
-    for r in full:
-        near[r["event_id"]] = max(near.get(r["event_id"], -1), 1 - float(r["_distance"]))
+    for pt in query(qvec):  # sin filtro: ¿qué se parece a tu prompt aunque haya quedado fuera?
+        eid = pt.payload["event_id"]
+        near[eid] = max(near.get(eid, -1), float(pt.score))
     excluded = []
     for eid, sim in sorted(near.items(), key=lambda kv: -kv[1])[:14]:
         if eid in chosen:

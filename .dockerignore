@@ -2,7 +2,7 @@
 .git
 .github
 .gcloudignore
-data/lancedb
+data/qdrant
 data/models
 data/browser-profile
 tests
