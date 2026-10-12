@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # ── Etapa 1: construir. Aquí se instalan las dependencias, se descarga el modelo y se genera el índice vectorial.
-FROM python:3.12-slim-trixie AS build
+FROM python:3.14-slim-trixie AS build
 COPY --from=ghcr.io/astral-sh/uv:0.11.16 /uv /bin/uv
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy UV_PYTHON_PREFERENCE=only-system HF_HUB_DISABLE_TELEMETRY=1
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN find .venv -type d \( -name tests -o -name test \) -prune -exec rm -rf {} + 
  && rm -rf .venv/lib/python3.12/site-packages/hf_xet*
 
 # ── Etapa 2: ejecutar. Sin uv, sin compiladores, sin caché de apt, sin root.
-FROM python:3.12-slim-trixie
+FROM python:3.14-slim-trixie
 RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 \
  && rm -rf /var/lib/apt/lists/* \
  && groupadd --system --gid 10001 app \
