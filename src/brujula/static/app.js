@@ -79,7 +79,8 @@ function highlight(text, kws){
 
 function render(r){
   const labels = Object.fromEntries(r.weights.map(w => [w.key, w.label]));
-  let h = `<div class="box interp"><h2>01 · INTERPRETACIÓN DE TU PROMPT</h2><ul>${r.interpretation.map(l => `<li>${esc(l)}</li>`).join('')}</ul>
+  let h = r.low_confidence ? '<div class="banner err">Tu texto no se parece a ningún evento. Estos son los menos lejanos; cuéntame qué quieres aprender o a quién quieres conocer.</div>' : '';
+  h += `<div class="box interp"><h2>01 · INTERPRETACIÓN DE TU PROMPT</h2><ul>${r.interpretation.map(l => `<li>${esc(l)}</li>`).join('')}</ul>
     <div class="sq">consulta semántica enviada al índice (sin lugar, día ni formato): «${esc(r.semantic_query)}»<br>${r.candidates} eventos candidatos · ${r.ms} ms</div></div>`;
   h += `<div class="box"><h2>02 · PONDERACIÓN (SE ADAPTA A TU PROMPT)</h2>${r.weights.map(w => `<div class="wrow"><span>${esc(w.label)}</span><div class="wbar"><i style="width:${w.weight * 2}%"></i></div><b>${w.weight}%</b></div>`).join('')}</div>`;
   if (!r.results.length){ $('results').innerHTML = h + '<div class="banner err">Ningún evento cumple esos filtros. Activa más días o quita el distrito.</div>'; return; }
@@ -107,7 +108,7 @@ async function run(){
   $('results').innerHTML = '<div class="box"><span class="blink">▍</span> buscando en el índice vectorial…</div>';
   try {
     const body = { prompt, days: sel.size === DAYS.length ? [] : [...sel], city: $('city').value || null, mode: $('mode').value || null,
-      include_soldout: $('soldout').checked, hide_ended: $('hideended').checked, top_n: +$('topn').value };
+      include_soldout: $('soldout').checked, hide_ended: $('hideended').checked, top_n: $('topn').value ? +$('topn').value : null };
     const res = await fetch('/api/search', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     render(await res.json());

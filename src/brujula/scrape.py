@@ -9,6 +9,7 @@ Dos modos:
 from __future__ import annotations
 
 import asyncio
+import html
 import json
 import re
 from datetime import datetime, timedelta, timezone
@@ -37,7 +38,7 @@ def _json_from(text: str) -> dict:
     try:
         return json.loads(text)
     except ValueError:  # el navegador envuelve el JSON en <pre>
-        return json.loads(re.sub(r"<[^>]+>", "", text).strip())
+        return json.loads(html.unescape(re.sub(r"<[^>]+>", "", text)).strip())
 
 
 def _text(node) -> str:

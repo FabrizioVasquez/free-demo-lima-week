@@ -161,7 +161,7 @@ def _stem(w: str) -> str:
 # ---------------------------------------------------------------- interpretación
 def parse_intent(prompt: str, cities: list[str], today: str) -> dict:
     p = norm(prompt)
-    out = {"days": [], "time": None, "city": None, "mode": None, "top_n": None, "goals": []}
+    out = {"days": [], "time": None, "city": None, "mode": None, "mode_hard": False, "top_n": None, "goals": []}
 
     morning = re.search(r"(por|en|de|a) la manana|temprano|madrugad|desayun", p)
     q = p
@@ -204,6 +204,8 @@ def parse_intent(prompt: str, cities: list[str], today: str) -> dict:
         out["mode"] = "presencial"
     elif re.search(r"\b(virtual|remoto|online|a distancia)\b", p):
         out["mode"] = "virtual"
+
+    out["mode_hard"] = bool(out["mode"] and re.search(r"\b(solo|solamente|unicamente|exclusivamente)\s+(en\s+)?(modalidad\s+)?(presencial|virtual)", p))
 
     m = re.search(r"\btop\s*(\d+)", p) or re.search(
         r"\b(\d+|un|uno|dos|tres|cuatro|cinco|seis|siete|ocho)\s+(?:mejores|eventos|opciones|recomendaciones)", p
@@ -300,6 +302,8 @@ def search(
         )
     if not include_soldout:
         where.append("status = 'abierto'")
+    if not mode and intent["mode_hard"]:
+        mode = intent["mode"]  # "solo virtual" en el texto se trata como filtro, no como preferencia
     if mode:
         where.append(f"mode = {_sql_str(mode)}")
     if city:
@@ -531,6 +535,7 @@ def search(
 
     return {
         "now": now,
+        "low_confidence": bool(top) and max(t["sim"] for t in top) < 0.40,
         "semantic_query": sem_q,
         "interpretation": fmt_intent(),
         "weights": [{"key": k, "label": CRIT_LABEL[k], "weight": w[k]} for k in w if w[k]],

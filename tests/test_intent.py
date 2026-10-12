@@ -36,3 +36,8 @@ def test_semantic_query_drops_logistics():
 
 def test_keywords_skip_stopwords():
     assert "agentes" in keywords("quiero aprender agentes") and "quiero" not in keywords("quiero aprender agentes")
+
+
+def test_solo_virtual_is_hard_filter_but_prefiero_is_not():
+    assert parse_intent("quiero algo solo virtual", CITIES, TODAY)["mode_hard"] is True
+    assert parse_intent("prefiero presencial", CITIES, TODAY)["mode_hard"] is False
