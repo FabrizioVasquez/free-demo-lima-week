@@ -75,7 +75,7 @@ scripts/gcp-setup.sh <PROJECT_ID> FabrizioVasquez/free-demo-lima-week
 El script imprime cuatro variables (`GCP_PROJECT_ID`, `GCP_REGION`, `GCP_SERVICE_ACCOUNT`, `GCP_WIF_PROVIDER`).
 Guárdalas en *Settings → Secrets and variables → Actions → Variables* y haz push a `main`.
 El proyecto necesita **facturación activa** para Cloud Run y Artifact Registry. La imagen se construye con el índice y el modelo
-ya dentro, así que el arranque no descarga nada. Con `--min-instances=0` no pagas mientras nadie la usa.
+ya dentro, así que el arranque no descarga nada. Con `--min-instances=0` no pagas mientras nadie la usa. La región es `us-central1` (Tier 1 de Cloud Run, ~40 % más barata que las de Sudamérica, que son Tier 2).
 
 ## Pruebas
 

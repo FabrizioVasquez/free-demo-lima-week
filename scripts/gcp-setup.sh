@@ -7,7 +7,7 @@ set -euo pipefail
 
 PROJECT_ID="${1:?falta PROJECT_ID}"
 REPO="${2:?falta GITHUB_REPO (usuario/repositorio)}"
-REGION="${3:-southamerica-west1}"
+REGION="${3:-us-central1}"
 SA_NAME="github-deployer"
 POOL="github"
 PROVIDER="github-provider"
