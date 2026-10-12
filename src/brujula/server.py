@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
+from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Literal
 
@@ -19,8 +20,20 @@ STATIC = Path(__file__).parent / "static"
 DAY_RX = re.compile(r"^2026-10-1[2-8]$")
 limiter = RateLimiter(limit=20, window_s=60)
 
+
+
+@asynccontextmanager
+async def lifespan(_: FastAPI):
+    """Carga el modelo y abre el índice ANTES de aceptar tráfico: sin esto, la primera búsqueda de cada instancia nueva espera ~4 s."""
+    try:
+        search("calentamiento del modelo", top_n=1)
+    except Exception:  # un índice ausente no debe impedir arrancar; /healthz sigue respondiendo
+        log.exception("no se pudo calentar el modelo")
+    yield
+
+
 # Sin /docs, /redoc ni /openapi.json: no hay motivo para publicar el esquema de la API.
-app = FastAPI(title="Brújula Tech Week", docs_url=None, redoc_url=None, openapi_url=None)
+app = FastAPI(title="Brújula Tech Week", docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
 
 
 class Query(BaseModel):

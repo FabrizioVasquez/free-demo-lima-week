@@ -38,7 +38,7 @@ Se ejercitó la API con varios prompts y la interfaz con un navegador real (Play
 Validación estricta de entrada, lista blanca de distrito (el valor acaba en un `WHERE`), límite de tasa por IP, cabeceras (CSP, HSTS, nosniff), sin `/docs`, imagen multi-etapa con usuario sin privilegios y sin red al arrancar. En Google Cloud: identidad de ejecución **sin roles**, deployer acotado a recursos concretos y federación de identidad restringida a la rama `main`. Detalle en [SECURITY.md](SECURITY.md).
 
 ## 8. Calibrar el coste
-Memoria del servidor medida: **107 MB en reposo y 507 MB** con el modelo cargado tras 15 búsquedas, así que `1 GiB` en Cloud Run deja el doble de margen. La región `us-central1` es de nivel 1 de precios: según el catálogo oficial cuesta ~40 % menos por vCPU-segundo y GiB-segundo que `southamerica-west1`. Con `min-instances=0` no se paga mientras nadie la usa.
+Memoria medida: en macOS ~507 MB, pero **en el contenedor Linux fueron 665 MiB** (la cifra que importa); `1 GiB` en Cloud Run deja un 35 % de margen. El primer intento de medir en el Mac subestimaba. La región `us-central1` es de nivel 1 de precios: según el catálogo oficial cuesta ~40 % menos por vCPU-segundo y GiB-segundo que `southamerica-west1`. Con `min-instances=0` no se paga mientras nadie la usa.
 
 ## 9. Automatizar
 - **CI:** `ruff`, `pytest` (30 pruebas), `bandit`, `pip-audit`.

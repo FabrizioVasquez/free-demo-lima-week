@@ -128,7 +128,7 @@ Resumen; el detalle con cada amenaza, control y prueba está en [SECURITY.md](do
 |---|---|
 | Embeddings | **Locales**: $0 por consulta y el texto no sale. MiniLM (481 MB) sobre potion (1.0 GB) con calidad equivalente en 15 consultas |
 | Región | `us-central1` (nivel 1): según el catálogo oficial, ~40 % menos por vCPU-s y GiB-s que `southamerica-west1` |
-| Memoria | Medido: 107 MB en reposo, ~507 MB con el modelo cargado → **1 GiB** |
+| Memoria | Medido en el contenedor (Linux): **665 MiB** con el modelo cargado y 12 búsquedas → **1 GiB** (35 % de margen) |
 | Escala | `min-instances=0` (no pagas sin tráfico), `max-instances=2` (tope de gasto) |
 
 > Recomendado: crear una alerta de presupuesto en Google Cloud.

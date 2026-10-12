@@ -114,7 +114,7 @@
 <line x1="1451.0" y1="286" x2="1023.0" y2="405" stroke="#9b9b9b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ad)"/>
 <text x="1289.0" y="350" font-size="11" fill="#9b9b9b" font-weight="400" text-anchor="middle" letter-spacing="0">mismo índice</text>
 <text x="40" y="618" font-size="12" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="0">Decisiones medidas:</text>
-<text x="210" y="618" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">MiniLM 481 MB vs potion 1.0 GB con calidad equivalente (MRR 0.89 vs 0.89) · servidor 107 MB en reposo y 507 MB con modelo cargado → Cloud Run con 1 GiB</text>
+<text x="210" y="618" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">MiniLM 481 MB vs potion 1.0 GB con calidad equivalente (MRR 0.89 vs 0.89) · servidor en contenedor Linux: 665 MiB con el modelo cargado → Cloud Run con 1 GiB</text>
 <text x="210" y="640" font-size="12" fill="#9b9b9b" font-weight="400" text-anchor="start" letter-spacing="0">Fragmentador: antes 154 de 381 fragmentos superaban 128 tokens y el modelo los cortaba en silencio; ahora 0 de 475 (máx. 123).</text>
 <rect x="20" y="670" width="1560" height="450" fill="none" stroke="#3a3a3a" stroke-dasharray="3 6"/>
 <text x="40" y="698" font-size="13" fill="#F8E18E" font-weight="700" text-anchor="start" letter-spacing="1.5">③ ENTREGA Y OPERACIÓN</text>
