@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brújula Tech Week</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <div class="eyebrow">[ PERÚ TECH WEEK 2026 · LIMA · 12–18 OCT ]</div>
+    <h1>BRÚJULA<span class="slash">//</span>TECH WEEK</h1>
+    <p class="lede">Escribe quién eres y qué buscas. Un buscador vectorial local elige los eventos y te muestra cada paso de su razonamiento.</p>
+  </div>
+  <div class="sys" id="sys" aria-live="polite">cargando…</div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab" role="tab" aria-selected="true" data-tab="rec">RECOMENDADOR</button>
+  <button class="tab" role="tab" aria-selected="false" data-tab="all">TODOS LOS EVENTOS <span id="count"></span></button>
+</nav>
+
+<main id="view-rec" class="layout">
+  <aside class="panel">
+    <label class="lbl" for="prompt">&gt; PROMPT</label>
+    <textarea id="prompt" spellcheck="false" placeholder="Soy… quiero… vivo en… prefiero…"></textarea>
+    <div class="lbl">EJEMPLOS</div>
+    <div class="chips" id="presets"></div>
+
+    <div class="lbl">DÍAS</div>
+    <div class="days" id="days"></div>
+
+    <div class="row2">
+      <div><label class="lbl" for="city">DISTRITO</label><select id="city"></select></div>
+      <div><label class="lbl" for="mode">FORMATO</label>
+        <select id="mode"><option value="">Todos</option><option value="presencial">Presencial</option><option value="virtual">Virtual</option></select></div>
+    </div>
+    <div class="row2">
+      <div><label class="lbl" for="topn">CUÁNTOS</label>
+        <select id="topn"><option>3</option><option selected>5</option><option>8</option><option>12</option></select></div>
+      <div></div>
+    </div>
+    <label class="check"><input type="checkbox" id="soldout" checked><span>Incluir agotados y lista de espera</span></label>
+    <label class="check"><input type="checkbox" id="hideended" checked><span>Ocultar eventos que ya terminaron</span></label>
+    <button class="btn" id="go">EJECUTAR BÚSQUEDA <kbd>Ctrl ↵</kbd></button>
+    <p class="hint" id="hint">100 % local: tu texto no sale de tu computador.</p>
+  </aside>
+  <section class="results" id="results" aria-live="polite"></section>
+</main>
+
+<section id="view-all" hidden>
+  <div class="tools">
+    <input id="q" type="search" placeholder="buscar por nombre, organizador o tema">
+    <select id="fday"></select>
+    <select id="fstatus"><option value="">Cualquier estado</option><option value="abierto">Abierto</option><option value="lista de espera">Lista de espera</option><option value="agotado">Agotado</option></select>
+  </div>
+  <div id="all"></div>
+</section>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.venv
+.git
+.github
+data/lancedb
+data/models
+data/browser-profile
+tests
+__pycache__
+*.md

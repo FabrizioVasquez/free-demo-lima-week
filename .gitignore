@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# datos locales: solo se versiona events.json; el índice y el modelo se regeneran
+data/*
+!data/events.json
+# NUNCA subir: contiene la sesión (cookies) de tu navegador en Luma
+data/browser-profile/
+.env
+*.json.bak

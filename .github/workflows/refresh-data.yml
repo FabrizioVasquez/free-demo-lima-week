@@ -1,0 +1,31 @@
+name: Refresh data
+# Vuelve a leer Luma, y si algo cambió (cupos, agotados, eventos nuevos) lo versiona y redespliega.
+# Desactívalo después del 18 de octubre de 2026.
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen --python 3.12
+      - run: uv run btw scrape
+      - name: Commit and redeploy if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/events.json; then echo "Sin cambios"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json
+          git commit -m "data: actualiza eventos de Luma"
+          git push
+          gh workflow run deploy.yml --ref main
