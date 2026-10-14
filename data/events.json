@@ -1,290 +1,5 @@
 [
  {
-  "id": "d822gk86",
-  "name": "IA Talent Wave Private Session en Catamarán",
-  "start": "2026-10-13 12:30",
-  "end": "2026-10-13 18:00",
-  "city": "La Punta",
-  "mode": "presencial",
-  "hosts": [
-   "Headland-Educación y Networking"
-  ],
-  "guests": 0,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "HORARIO Inicio: 12:00 PM (registro y bienvenida en tierra) Embarque: 12:45 PM Finalización: 6:00 PM ENTRADAS Con costo. Precio: S/ 350 por persona. Acceso limitado: 25 a 35 personas seleccionadas. UBICACIÓN Yacht Club Peruano Av. Coronel Bolognesi 761, La Punta, Callao, Lima — Perú DESCRIPCIÓN Una velada exclusiva en el Pacífico peruano diseñada para reunir a los líderes más influyentes del ecosistema tech peruano durante Perú Tech Week 2026. Talent Wave Private Session es la experiencia más memorable de la semana. Un catamarán saliendo del único puerto marítimo de una capital sudamericana, con 25 a 35 líderes seleccionados del ecosistema: founders, inversores, directores de innovación, gerentes de TI y Recursos Humanos, y referentes de organizaciones como Perú Tech Week, COFIDE, Perú Business Fest, ADN.VC y Perú SV Techsuyo. No es un evento corporativo. No hay ponencias ni presentaciones formales. Es conversación real de alto nivel, networking auténtico y el Pacto del Callao como cierre: cada asistente se compromete públicamente con una acción concreta antes de desembarcar. El día: 12:00 PM — Registro y bienvenida en el Yacht Club Peruano 12:45 PM — Embarque 1:00 PM — Zarpe · Almuerzo a bordo 2:00 PM — Demo Day: pitch de los mejores proyectos de Startup AI Builder ante inversionistas 3:30 PM — Networking en altamar · Conversación abierta 5:00 PM — El Pacto del Callao 5:30 PM — Regreso a puerto 6:00 PM — Desembarque y cierre Incluye: Experiencia gastronómica marina · Tabla de quesos · Barco de makis · Barra libre · Networking en altamar · Parking previa coordinación Recomendaciones: Llevar bloqueador solar y casaca cortaviento. La brisa marina refresca especialmente en las horas de la tarde. Organiza: Inteligenze · Avalados por Google for Startups Program Evento oficial de Perú Tech Week 2026 ENTRADAS Con costo. Precio: S/ 350 por persona. Acceso limitado: 25 a 35 personas seleccionadas. Nota: los inscritos en Wave Program tienen acceso incluido en el costo de su programa. REGISTRO Requiere aprobación. Los asistentes solicitan su lugar y el equipo organizador confirma la participación. Esto garantiza el perfil correcto de asistentes y el aforo exclusivo del evento. Mensaje de solicitud sugerido para Luma: \"Para garantizar la exclusividad y el nivel de la experiencia, cada solicitud de registro es revisada por el equipo de Inteligenze y Wirbi. Recibirás confirmación en un máximo de 48 horas.\" Host principal: Mijalys Silva · CEO Inteligenze · 951 787 412 · www.inteligenze.com",
-  "url": "https://luma.com/d822gk86"
- },
- {
-  "id": "h0a35jp4",
-  "name": "Emprelatam Connect Day",
-  "start": "2026-10-13 14:00",
-  "end": "2026-10-13 18:00",
-  "city": "San Isidro",
-  "mode": "presencial",
-  "hosts": [
-   "Emprelatam"
-  ],
-  "guests": 416,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "Emprelatam es la aceleradora regional equity-free más activa de Latinoamérica. Te invitamos a celebrar nuestros valores en una tarde repleta de valor para conectarte, apoyarte y crecer junto a los referentes del ecosistema. AGENDA 🕑 Bienvenida + ice breaker Panel: \"Construir sobre IA: cómo se están redefiniendo industrias, más allá del ruido\" Startup Showcase Panel: \"Construir de Latam para el mundo: cómo escalar con éxito\" Cierre + Networking ¡No te lo pierdas! Evento gratuito con aprobación previa",
-  "url": "https://luma.com/h0a35jp4"
- },
- {
-  "id": "r66pfvms",
-  "name": "Workshop Virtual: Cómo proteger la información sensible de tu empresa contra el Shadow AI x ShArkI Cybersec",
-  "start": "2026-10-13 16:00",
-  "end": "2026-10-13 17:30",
-  "city": "",
-  "mode": "virtual",
-  "hosts": [
-   "Luisa de Synergy",
-   "Laura",
-   "Francisco Fasan",
-   "Luisa Irigoyen"
-  ],
-  "guests": 181,
-  "status": "abierto",
-  "approval": true,
-  "spots": 19,
-  "description": "La IA ya forma parte del trabajo diario. El problema aparece cuando alguien pega en ChatGPT, Claude, Gemini u otras herramientas información que no debería salir de la empresa: datos de clientes, código fuente, credenciales o documentos confidenciales. Prohibir estas herramientas no siempre resuelve el problema. Para proteger la información, primero hay que entender cómo se está usando la IA y qué controles pueden acompañar esa adopción. En este workshop virtual parte de Perú Tech Week, María Laura Andie , cofundadora de ShArkI , y Mateo Bovio , experto en awareness en ciberseguridad, van a conversar sobre los riesgos del Shadow AI y las formas de prevenir filtraciones sin frenar el uso productivo de la IA. ShArkI ofrece una plataforma para detectar y proteger información sensible compartida con herramientas de IA, con análisis local y controles que buscan preservar la privacidad de los empleados. Vamos a hablar de Qué es el Shadow AI y por qué aparece en las empresas. Qué información sensible puede terminar en un prompt. Por qué las herramientas tradicionales de DLP pueden no detectar lo que se escribe en una ventana de IA. Cómo combinar tecnología, políticas internas y awareness para reducir el riesgo. Cómo permitir el uso de IA con controles adecuados. Por qué es importante para tu organización? ¿A quién está dirigido? A CISOs, CTOs, CEOs, especialistas en ciberseguridad y emprendedores tecnológicos que quieran entender mejor los riesgos de la IA y cómo proteger la información de su organización. Speakers: María Laura Andie — Cofundadora de ShArkI LinkedIn Mateo Bovio — Invitado especial LinkedIn",
-  "url": "https://luma.com/r66pfvms"
- },
- {
-  "id": "8kuxiohb",
-  "name": "Legal Launchpad: Diseñando tu startup para salir de Perú x PPU & Krealo",
-  "start": "2026-10-13 16:30",
-  "end": "2026-10-13 18:00",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "JOEY"
-  ],
-  "guests": 65,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "Legal Launchpad vuelve junto a Krealo para su segunda edición, dentro de la agenda de Peru Tech Week. Startups, founders e inversionistas se reúnen en un mismo espacio para hablar de algo que casi nunca se discute en público: cómo diseñar hoy la estructura legal de una startup pensando en su salida de mañana. Si el objetivo es levantar capital fuera, expandirse a otros mercados, entre otras cosas, muchas de esas decisiones se toman —sin saberlo— desde el día en que se crea la empresa. La agenda incluye paneles, un espacio de preguntas y networking entre todos los asistentes. Si tienes una startup, trabajas en una, inviertes en ellas o simplemente te interesa entender cómo el derecho acompaña el crecimiento de un negocio, esta es una oportunidad para escuchar experiencias concretas, conocer tendencias del sector y conectar con otros asistentes del ecosistema legal y emprendedor. Fecha: 13 de octubre Horario: 4:30 p.m. a 6:00 p.m. Lugar: SUM PPU, Av. Santa Cruz 888, Miraflores Reserva tu lugar (entrada libre, previa inscripción) y acompáñanos en esta nueva edición del Legal Launchpad. *AFORO LIMITADO*",
-  "url": "https://luma.com/8kuxiohb"
- },
- {
-  "id": "l42s5hug",
-  "name": "Fintech & Proptech Mixer PTW2026 by adn.vc, UTEC Ventures, 401 y Blinka 🇵🇪",
-  "start": "2026-10-13 17:00",
-  "end": "2026-10-13 21:00",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "Brunella Alatrista",
-   "Diego Alfageme",
-   "Nico Di Pace",
-   "Alberto Arrieta M."
-  ],
-  "guests": 97,
-  "status": "lista de espera",
-  "approval": true,
-  "spots": 0,
-  "description": "Un encuentro exclusivo entre fundadores, operadores e inversionistas del mundo PropTech y FinTech , en el marco de Perú Tech Week 2026 . Organizado por ADN VC, UTEC Ventures, 401 Accelerator y Blinka , este mixer busca conectar a los principales actores que están transformando los sectores inmobiliario y financiero de América Latina. 🎤 Panel de Founders revolucionando la Vivienda y Finanzas en Latam. Tendencias emergentes en PropTech & FinTech. 🎤 Panel de Fondos de VC. Debate a lo 'Verdad o Mito' sobre situaciones reales a las que se enfrentan inversionistas en relación a Startups. 🚀 Pitch! 5 startups seleccionadas presentarán sus soluciones y 5 fondos VC/CVC en un Panel compartirán su tesis de inversión y lo que buscan en sus próximas alianzas. 🍸 Networking: Cierra la jornada con buena música, cocteles y conversaciones interesantes con gente crack del ecosistema. 🧬 adn.vc | Aplica y Recibe Inversion de ADN : https://airtable.com/appKCR5kscWzuZC3C/pagxBiLhNLAhYSlru/form",
-  "url": "https://luma.com/l42s5hug"
- },
- {
-  "id": "s1szxsik",
-  "name": "Conecta Científica | HealthTech, IA & DeepTech",
-  "start": "2026-10-13 17:30",
-  "end": "2026-10-13 21:00",
-  "city": "Villa EL Salvador",
-  "mode": "presencial",
-  "hosts": [
-   "Alejandra Vera",
-   "Milagros Fuentes Cervantes",
-   "404 Tech Found"
-  ],
-  "guests": 209,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "Un meetup de la Universidad Científica del Sur que abre sus puertas al ecosistema para conectar a estudiantes, founders, startups, investigadores, mentores, profesionales y comunidades de innovación. En esta primera edición ponemos el foco en IA, Healtech y Deeptech , explorando cómo nacen los proyectos, qué caminos puede tomar una experiencia emprendedora y cómo se conectan estos mundos con el ámbito corporativo. Conversaremos sobre emprender desde la universidad y el tránsito de Startup a Corporativo , compartiendo experiencias de quienes están construyendo desde distintos puntos del ecosistema. Además, presentaremos la Red de Mentores Científica y contaremos con comunidades aliadas, cerrando con un espacio de networking & matchmaking para generar conexiones, colaboración y nuevas oportunidades. Científica conecta su talento y conocimiento con el ecosistema.",
-  "url": "https://luma.com/s1szxsik"
- },
- {
-  "id": "k6t085ts",
-  "name": "Open Innovation Grow Night",
-  "start": "2026-10-13 18:00",
-  "end": "2026-10-13 21:00",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [],
-  "guests": 359,
-  "status": "abierto",
-  "approval": false,
-  "spots": null,
-  "description": "Una noche para conectar startups, corporativos y actores del ecosistema a través de la innovación abierta. 🚀 6:00 – 6:30 p. m. | Recepción & Welcome Networking 🤝 Empezamos la noche conectando. Un primer espacio para conocer a otros asistentes, conversar y generar nuevas conexiones entre startups, empresas y actores del ecosistema. 6:50 – 7:30 p. m. | Panel: Corporativos & Open Innovation 💡 Una conversación desde ambos lados de la innovación abierta: ¿qué necesitan las startups para trabajar con grandes empresas y qué buscan los corporativos al momento de colaborar con ellas? Conoceremos experiencias, aprendizajes y claves para construir relaciones que generen valor para ambas partes. 7:30 – 8:00 p. m. | Panel: Fintech + Corporativos 🚀 Exploraremos cómo startups, empresas y actores del sector financiero pueden colaborar para desarrollar nuevas soluciones, generar oportunidades y acelerar la innovación. 8:00 – 9:00 p. m. | Networking & Connections ✨ Cerramos la noche conectando ideas, personas y oportunidades. Un espacio para conversar con speakers, startups, corporativos y otros actores del ecosistema. Open Innovation Grow Night es un espacio organizado por Misión 3 – Centro de Emprendimiento e Innovación y Growyard , en el marco de Peru Tech Week 2026 .",
-  "url": "https://luma.com/k6t085ts"
- },
- {
-  "id": "zucymbtl",
-  "name": "After Office by trii",
-  "start": "2026-10-13 18:00",
-  "end": "2026-10-13 21:00",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "Andrea Melo",
-   "Diego Torres"
-  ],
-  "guests": 244,
-  "status": "abierto",
-  "approval": true,
-  "spots": 36,
-  "description": "¡Una noche para hablar de inversiones, conocer inversionistas, tendencias de mercado y todo lo nuevo de trii! 🌲 Postula por un cupo. Ubicación secreta.🥂 ⬛ Organiza @triiperu ⬛ Con apoyo de Blum , SHIFT y Comunal",
-  "url": "https://luma.com/zucymbtl"
- },
- {
-  "id": "wt931uve",
-  "name": "Presentación de la Hackathon Sunass \"Lideresas por el Agua\"",
-  "start": "2026-10-13 18:00",
-  "end": "2026-10-13 20:00",
-  "city": "Santiago de Surco",
-  "mode": "presencial",
-  "hosts": [],
-  "guests": 0,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "¿Lista para transformar el futuro del agua con tecnología e innovación abierta? 💧🚀 Únete al evento organizado por la Superintendencia Nacional de Servicios de Saneamiento (Sunass) donde presentaremos la Hackathon Sunass \"Lideresas por el Agua\" . Este meetup conectará a desarrolladoras, científicas de datos, estudiantes y especialistas en políticas públicas con un objetivo común: resolver los desafíos más urgentes de los servicios de saneamiento en el país mediante la innovación tecnológica. Acompáñanos en una tarde de aprendizaje, paneles de alto nivel y espacios de conexión donde presentaremos todo lo que necesitas saber para participar de la primera hackathon de mujeres en el sector de agua y saneamiento. 🗓️ Agenda del evento 6:00 p.m. | Apertura 6:10 p.m. | El desafío del agua y la innovación pública 6:20 p.m. | Panel de expertas: \"Tecnología, Inteligencia Artificial e Innovación pública para impulsar la modernización y transformación de la gestión del agua\" 6:45 p.m. | Lanzamiento Oficial: Bases de la Hackathon 7:20 p.m. | Dinámica ¡Conforma tu equipo e inscríbete a la competencia! 7:45 p.m. | Café y Networking ¿Para quién es este evento? Mujeres apasionadas por la tecnología, estudiantes universitarias, data scientists , startups y profesionales del sector público o ambiental interesadas en GovTech y ClimateTech. 📌 ¡Los cupos son limitados! Regístrate para asegurar tu lugar, conectar con la comunidad y dar el primer paso para convertirte en una lideresa por el agua. Conoce más sobre la Hackathon Sunass \"Lideresas por el Agua\" Portal oficial de la iniciativa: https://www.gob.pe/institucion/sunass/campa%C3%B1as/145824-hackathon-de-mujeres-en-innovacion-publica",
-  "url": "https://luma.com/wt931uve"
- },
- {
-  "id": "hack0-e9ru",
-  "name": "Lovable Meetup Arequipa",
-  "start": "2026-10-13 18:30",
-  "end": "2026-10-13 21:30",
-  "city": "José Luis Bustamante",
-  "mode": "presencial",
-  "hosts": [
-   "Ignacio Velasquez"
-  ],
-  "guests": 175,
-  "status": "lista de espera",
-  "approval": false,
-  "spots": 0,
-  "description": "Lovable llega a Arequipa: menos charla, más construir. 🛠️ Una tarde hands-on para traer tu laptop y salir con algo hecho en una sola sesión, usando Lovable. No importa si recién empiezas o ya lo usas: hay créditos, swag y espacio para construir. Es un meetup de Lovable Ambassador, con apoyo de Lovable. La tarde incluye: 👨‍💻 Construcción en conjunto (ven con equipo, hazlo solo, o te ayudamos a armar uno) 🎨 Demo de apertura: de la idea a algo que se puede usar ⚡ Créditos de Lovable para construir durante el evento 🎁 Swag para quien se queda a construir 🎤 Demo showcase final: comparte lo que armaste 🤝 Networking con builders, diseñadores y founders de la ciudad No necesitas ser experto. Puedes aprender sobre la marcha y colaborar. Si ya tienes experiencia, hay margen para experimentar. Trae tu laptop y tus ganas de crear. Construyamos las cosas que Perú necesita. 🇵🇪 Cupos limitados.",
-  "url": "https://luma.com/hack0-e9ru"
- },
- {
-  "id": "lollvktq",
-  "name": "Tu idea funcionando: Taller de Construcción con IA",
-  "start": "2026-10-13 18:30",
-  "end": "2026-10-13 21:30",
-  "city": "",
-  "mode": "por confirmar",
-  "hosts": [
-   "Eduardo  Ruiz",
-   "Eduardo Ruiz"
-  ],
-  "guests": 238,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "🚀 En Perú hay mucha gente con criterio de producto, pero con dificultades para construir. Las herramientas de IA ya cerraron esa brecha, pero casi nadie las usa bien: se quedan en el prompt bonito y no llegan a publicar. En este taller virtual no escuchas sobre IA, construyes. Elegimos un caso concreto, definimos el alcance mínimo y lo armamos en vivo con herramientas de IA. 🛠️ Lo que vas a hacer Decidir qué construir y qué dejar fuera (el error más caro es construir de más). Construir en vivo, en paralelo con el facilitador. Publicar tu producto y compartir tu URL funcionando. Conectarle una automatización para que haga trabajo repetitivo por ti. Llevarte el kit: prompts, repositorio base y flujo. 🎯 Para quién es Founders no técnicos, product managers, diseñadores y operadores que necesitan validar ideas sin depender de un equipo de desarrollo. No necesitas saber programar. 💻 Formato Virtual, el martes 13 de octubre, desde las 6:30 pm. Crea tus cuentas con el checklist que te enviaremos 48 horas antes, así no perdemos tiempo en vivo. Ten tu laptop lista. 🌎 Abierto a todo el Perú Virtual y gratuito, para que Arequipa, Trujillo, Cusco, Piura y el resto del país participen sin viajar. 🎤 Facilita Eduardo Ruiz Hipólito, Stellar Ambassador, mentor y organizador de talleres y buildathons de IA en Lima, desde la comunidad ZajaLabs. 📍 Cupos limitados. Regístrate y asegura tu lugar.",
-  "url": "https://luma.com/lollvktq"
- },
- {
-  "id": "yaej5qhe",
-  "name": "Women Night \"ELLA LIDERA\" - Networking Cocktail",
-  "start": "2026-10-13 18:30",
-  "end": "2026-10-13 21:30",
-  "city": "Surquillo",
-  "mode": "presencial",
-  "hosts": [
-   "Fiorella Montalvo Casma",
-   "Women in Engineering (WIE) Perú",
-   "Rihana Avila",
-   "Damaris Melendez"
-  ],
-  "guests": 31,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "✨ Women Night \"ELLA LIDERA\" - Networking Cocktail Una noche para conectar, compartir experiencias y descubrir nuevas formas de liderar en tecnología. Concepto: Un encuentro cercano entre mujeres en tecnología —estudiantes, profesionales, emprendedoras y líderes— para generar conexiones reales, conocer experiencias de liderazgo y conversar sobre los desafíos y oportunidades que están transformando el futuro del sector tech en el Perú. 🎯 Objetivo: Crear un espacio de conexión y aprendizaje que permita a mujeres en tecnología ampliar su red, conocer referentes femeninos del ecosistema tech y compartir experiencias sobre liderazgo, innovación y desarrollo profesional. 👩‍💻 Público: Mujeres vinculadas al ecosistema tecnológico, estudiantes de carreras STEM, profesionales de tecnología, emprendedoras y mujeres interesadas en desarrollar su liderazgo en tecnología. 📅 Programa 18:30 – 19:00 ☕ Registro + Cocktail de bienvenida 19:00 – 19:20 🤝 Speed Networking: conecta, conversa y comparte 19:20 – 19:50 🤖 IA y talento tech: el uso de la inteligencia artificial en la evaluación de perfiles técnicos 19:50 – 20:50 🎤 Panel: “Mujeres que construyen el futuro tech del Perú” 20:50 – 21:00 📸 Fotos + cierre INGRESO LIBRE Consumo en local obligatorio, monto por persona S/40.00 Separación de cupo S/10.00, mismo que será descontado del consumo No se realizarán devoluciones; sin embargo, posterior a la separación del cupo, el pase puede ser transferible para otra persona.",
-  "url": "https://luma.com/yaej5qhe"
- },
- {
-  "id": "y7ic8a5t",
-  "name": "De Perú al mundo: Construye tu startup global | Stripe Lima Community",
-  "start": "2026-10-13 19:00",
-  "end": "2026-10-13 21:00",
-  "city": "San Isidro",
-  "mode": "presencial",
-  "hosts": [
-   "Paúl Siccha"
-  ],
-  "guests": 377,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "Bienvenidos al primer evento de Stripe Lima community , organizado en colaboración con Startups.pe . Un espacio para conocer a otros fundadores, compartir lo que estamos aprendiendo y conversar sobre cómo construir desde Perú para clientes de todo el mundo. En este primer encuentro escucharemos a dos fundadores en momentos distintos: uno que ya tiene experiencia creciendo con Stripe y otro que está dando sus primeros pasos. Hablaremos de cómo empezaron, qué decisiones tomaron y qué les hubiera gustado saber antes. A partir de sus historias, exploraremos cómo cobrar a clientes internacionales, qué implica constituir una empresa en Estados Unidos con Stripe Atlas y dónde encajan Stripe y Stripe Connect según tu negocio. Habrá una conversación con los fundadores, una sesión práctica sobre estas herramientas, preguntas del público y tiempo para conocernos. La idea es que te lleves más claridad sobre tus próximos pasos y conexiones con personas que también están construyendo. ¿PARA QUIÉN ES? Para fundadores, personas con una idea de negocio, desarrolladores, inversionistas y quienes quieran conectar con el ecosistema startup peruano. No necesitas ser usuario de Stripe para participar. SPEAKERS Dos fundadores usuarios de Stripe nos contarán su experiencia. - Juan Luis Auccatoma , Co-fundador de Whaticket nos contará sobre boostraping y como Stripe le apoyó en su expansión de negocio. - Luis Pimentel , Co-fundador de Inklop, nos contará sobre crear una startup en el sector de influencers y como Stripe le está solucionando la operativa de su negocio. - Paul Siccha , Co-fundador de Startups.pe , nos contará los beneficios de Stripe. ORGANIZACIÓN Organizado por Paul Siccha , Stripe Lima Community Builder y fundador de Startups.pe , comunidad que conecta a quienes forman parte del ecosistema startup en Perú. Con el apoyo de StartUPC , la incubadora y aceleradora de negocios de la UPC, que nos abre las puertas y nos recibe en su espacio para este encuentro. COMUNIDAD Únete a la comunidad de Whatsapp: Unirse al grupo de Whatsapp Síguenos en Instagram: /startups.pe Síguenos en LinkedIn: /startups.pe",
-  "url": "https://luma.com/y7ic8a5t"
- },
- {
-  "id": "founderslive-lima-2026-10",
-  "name": "Founders Live Lima",
-  "start": "2026-10-13 19:00",
-  "end": "2026-10-13 21:30",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "Founders Live Lima",
-   "Incubadora Scale",
-   "Ronald Barzola"
-  ],
-  "guests": 239,
-  "status": "abierto",
-  "approval": false,
-  "spots": 61,
-  "description": "Founders Live Lima VII is here! Join us for an incredible evening… Founders Live is an unforgettable networking experience and pitch competition sweeping the globe. 5 founders 99-second pitches 4 minutes of audience Q&A YOUR VOTES decide the winner! So bring your friends and coworkers, grab some food and drink, get to know your local entrepreneurs, and vote for what you think will be the next big thing… built in Peru. Know someone who should attend? Open The Door Starring Ronald Barzola as your city leader! Competing Founders and Startups Patricia Liebano whith Bon Cacao : Chocolates y snacks saludables a base de cacao e insumos 100% peruanos. Alvaro Chir with Babbely : IA que traduce voz en tiempo real conectando al mundo sin barreras lingüísticas. Jose Llanos with EduEval IA : IA que enseña y verifica el aprendizaje. Giuseppe Garibotto with Quick eat : Ecommerce que permite a los negocios vender mediante su propia web y app, mejorar su rentabilidad y reducir tareas operativas y de comunicación. Cesar Ortiz with Orexe: IA que combina estrategia, ingeniería, contexto de negocio para avanzar hacia operaciones autónomas. Interested in pitching at this or a future event? Apply here! Know someone who should pitch? Open The Door Agenda 6:00 pm - Networking 7:00 pm - Announcements, Pitches, Voting 8:00 pm - More networking and after-party Winners The Founders Live winners package includes: Front Row membership with unlimited access to Backstage Intelligence and the Backchannel community Founders Live Booster Pack over $1,000,000 in cash savings on 100+ essential apps and services for startups An appearance in the Founders Live Prime Time regional qualifiers with a chance to advance to our Prime Time global livestream tournament Partners Pensato is a secure layer for local AI, checking every request going in, tracing every answer coming out, and keeping a person accountable throughout, across any industry, workflow, or team. Get a free AI Governance Readiness Evaluation Enter the Pitch Video Challenge! This is your chance to share your story in a 99-second pitch video . Prizes start at 250 votes. Voting runs Nov 2 - Dec 2 Enter - FREE - through Nov 9 What do you need help with? Nick will connect you directly to a partner who can help. Get started toward success Do something great for someone else today Tell them to attend an event, pitch their startup, or even lead a Founders Live city. Open The Door Front Row membership is here The operating system and network for global founders. Claim your FREE account Keywords: #FoundersLive #Startups #Lima #PitchCompetition #Entrepreneurship",
-  "url": "https://luma.com/founderslive-lima-2026-10"
- },
- {
-  "id": "wjg4l5fl",
-  "name": "Causita founders🧑‍🍳 | Experiencia de cocina para founders x Boltea",
-  "start": "2026-10-13 19:00",
-  "end": "2026-10-13 21:00",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "Karol Boza",
-   "Mariah Anglas"
-  ],
-  "guests": 23,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "Causita Founders 🍋 Estamos acostumbrados a ir a eventos donde la primera pregunta es: “¿A qué te dedicas?” Esta vez queremos empezar por otro lado. En Causita Founders nos juntamos a cocinar una causa limeña mientras hablamos de todo menos de negocios. Sin pitches, sin ponencias y sin ese momento incómodo de “ahora sí, hagan networking”. Será una experiencia íntima para 20 fundadores seleccionados , pensada para conectar desde un lugar mucho más humano. 📅 Martes 13 de octubre 🕖 7:00 p.m. 📍 Ubicación: por confirmar 🎟️ Entrada: S/80 Incluye: Piqueos y bebidas Experiencia completa de cocina 1 ronda de pisco sour ¿Cómo funciona el registro? El registro requiere aprobación . Completar tu inscripción no garantiza automáticamente un cupo: el equipo organizador revisará los registros y confirmará directamente la participación de los 20 asistentes seleccionados. Las hosts de Boltea : https://boltea.net/ Karol Boza — 951 164 899 Mariah Anglas — 939 271 493 Solo 20 cupos. Nos vemos alrededor de la mesa 💛",
-  "url": "https://luma.com/wjg4l5fl"
- },
- {
-  "id": "d6vx4agq",
-  "name": "Panel: El futuro como práctica: una conversación real sobre foresight estratégico",
-  "start": "2026-10-13 19:00",
-  "end": "2026-10-13 21:30",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "Patricia ",
-   "Mutaciones"
-  ],
-  "guests": 142,
-  "status": "lista de espera",
-  "approval": false,
-  "spots": 0,
-  "description": "📡 Sobre el evento El futuro no se improvisa, se diseña. Pero hoy seguimos escuchando mucho de foresight como si fuera un concepto remoto que algunos googlean, y no una práctica que ya está corriendo dentro de empresas peruanas. Tendremos un panel de lujo con invitadxs del Banco de Crédito del Perú y de Cementos Pacasmayo. Ambas son organizaciones que forman parte de VamosViendo, la comunidad de Foresight Estratégico de Mutaciones. Nuestrxs invitadxs compartirán cómo sus organizaciones están apostando hoy en día por foresight, qué retos enfrentan para instalar y escalar iniciativas desde adentro, y hacia dónde lo están llevando. 📅 Martes 13 de octubre de 2026 ⏰ 7:00 pm 📍 Mutalab // Av. José Pardo 200, Miraflores 🎤 Sobre lxs invitadxs Alejandra Cabrera es Gerente de Originación y Nuevas Oportunidades en BCP. Administradora de empresas con posgrado en marketing digital e innovación, desde ahí construye nuevos negocios dentro del banco. Renzo Vallejo es Product Manager del equipo de Foresight del CIX de BCP. Diseñador con Master en Digital Experience Design, pasó por agencias de publicidad, equipos de innovación in-house y consultoras de diseño. Inés Roggero es Directora de Innovación y Transformación Digital en Cementos Pacasmayo. Ingeniera industrial con Master en Design Management, fue Gerente en Alicorp y en otras marcas globales como Inca Kola y Coca-Cola. Fernando González-Olaechea es Strategic Foresight & Research Manager en Cementos Pacasmayo. Periodista con una Maestría en Estudios Culturales, creó el área de Design Research y la de Foresight Estratégico en Pacasmayo. 🥸 ¿Para quién es? Este evento es para ti si trabajas en innovación, diseño estratégico, investigación, o simplemente te interesa entender cómo las organizaciones peruanas se están preparando para lo que viene. No necesitas saber qué es foresight de antemano, solo curiosidad por el tema. Importante Evento gratuito, previo registro. Durante el evento se tomarán fotografías y se grabará video para su difusión en los canales de Mutaciones. Organiza: Mutaciones · En el marco de Perú Tech Week 2026",
-  "url": "https://luma.com/d6vx4agq"
- },
- {
   "id": "1aalx3x8",
   "name": "Co-Working Day - Visita la Tech House by UTEC Ventures & ADN",
   "start": "2026-10-14 08:00",
@@ -315,10 +30,10 @@
    "EMPRENDE VALOR",
    "Pedro Angel Torres Guzmán"
   ],
-  "guests": 205,
-  "status": "lista de espera",
+  "guests": 204,
+  "status": "abierto",
   "approval": true,
-  "spots": 0,
+  "spots": 1,
   "description": "FACTORING: INNOVACIÓN FINANCIERA 🚀 1er. Encuentro de Empresarios EV | Perú Tech Week 2026 El financiamiento empresarial está cambiando. Las Fintech, empresas de factoring y nuevos actores financieros están desarrollando alternativas para transformar cuentas por cobrar en liquidez y facilitar el crecimiento de las empresas. En el marco de Perú Tech Week 2026 , Emprende Valor presenta FACTORING: Innovación Financiera , un encuentro que conecta a empresarios, Fintechs, empresas de factoring y actores del ecosistema financiero para conocer qué está pasando y hacia dónde evoluciona este mercado. 🔎 ¿Qué vamos a explorar? 🏛️ ESTADO PROMOTOR ¿Cuál es la visión y qué avances se están impulsando desde el Estado para fortalecer el factoring como herramienta de financiamiento empresarial? 💡 EMPRESAS PROMOTORAS ¿Cómo están innovando las empresas, Fintechs y actores privados alrededor del factoring? 🤝 CONEXIONES Y NETWORKING Una oportunidad para conocer empresarios, Fintechs, empresas de factoring, fondeadores y profesionales vinculados al ecosistema financiero. 🎤 INVITADOS · Eloy Durán Viceministro de Mype e Industria – PRODUCE · María García Godos Socia fundadora, gerente de reisgos y CFO de Adelanta Factoring · Daniel Lastra Gerente general de Puerto X Perú · Rafael Zorrilla CEO – BanPro Factoring 🚀 ¿POR QUÉ PARTICIPAR? Porque el factoring está evolucionando y está generando nuevas oportunidades para: • Obtener liquidez para las empresas • Desarrollar nuevos productos financieros • Crear soluciones Fintech • Conectar empresas con fuentes de financiamiento • Generar nuevas oportunidades de negocio y colaboración 👥 DIRIGIDO A Empresarios PYME · Fintechs · Empresas de factoring · Fondeadores · Profesionales del sector financiero · Emprendedores · Startups y personas interesadas en innovación financiera. 📅 MIÉRCOLES 14 DE OCTUBRE DE 2026 🕣 8:30 a. m. – 1:00 p. m. 📍 Auditorio de PRODUCE Calle Uno Oeste N.° 060, Urb. Córpac, San Isidro – Lima 🎟️ INGRESO GRATUITO | PREVIA APROBACIÓN 👥 AFORO LIMITADO: 150 ASISTENTES ⚡ FACTORING + FINTECH + EMPRESAS + INNOVACIÓN Conoce el mercado. Conecta con sus protagonistas. Descubre nuevas oportunidades. Organiza Emprende Valor Auspicia: Programa Nacional \"Tu Empresa\"/ Ministerio de la Producción En el marco de Perú Tech Week 2026 #PeruTechWeek #Factoring #Fintech #InnovacionFinanciera #FintechPeru #Pymes #Startups #Finanzas #Networking #EmprendeValor #produce #ministeriodelaproduccion #tuempresa #programanacionaltuempresa",
   "url": "https://luma.com/ovl2ijc4"
  },
@@ -352,7 +67,7 @@
    "Claudia Castillo",
    "Cámara Verde Perú"
   ],
-  "guests": 189,
+  "guests": 198,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -425,10 +140,10 @@
    "Francisco Fasan",
    "Luisa Irigoyen"
   ],
-  "guests": 253,
+  "guests": 264,
   "status": "abierto",
   "approval": true,
-  "spots": 47,
+  "spots": 36,
   "description": "LinkedIn es una herramienta clave para generar confianza, abrir conversaciones comerciales y posicionarte como referente en el mercado. Para los líderes de empresas tech en Latam, hoy no alcanza con estar, también importa cómo se comunica el valor que se construye desde la marca personal. En este workshop, Francisco Fasan y Luisa Irigoyen de We Are Doers compartirán una mirada práctica sobre por qué la marca personal ya no es opcional para quienes toman decisiones y quieren impulsar su negocio en 2026. La idea es entender cómo empezar a trabajar tu marca personal para generar oportunidades de negocio y multiplicar hasta 10X tus leads. ​​Cómo usar la IA para agilizar la creación de contenido, sin dejar de lado tu identidad. Cómo transformar tu perfil de Linkedin en una landing page que genera reuniones. Cómo ampliar tu red de manera inteligente. Cómo complementar el contenido con mensajes personalizados para construir confianza. También vas a llevarte ideas concretas para empezar a ordenar tu posicionamiento y potenciar tu alcance de forma estratégica. Si buscás multiplicar tus leads y construir una presencia más sólida en el entorno digital, esta charla te va a dar un punto de partida claro y accionable. Una oportunidad para revisar tu posicionamiento actual y salir con herramientas para llevar tu marca personal de cero a referente.",
   "url": "https://luma.com/v7patj2x"
  },
@@ -464,10 +179,10 @@
    "Nicky Schaub",
    "Paúl Siccha"
   ],
-  "guests": 407,
+  "guests": 411,
   "status": "abierto",
   "approval": true,
-  "spots": 493,
+  "spots": 489,
   "description": "Perú Tech Week está aquí 🚀 El ecosistema tech peruano se reúne para una noche enfocada en las tres fuerzas que están redefiniendo la industria financiera y tecnológica: Inteligencia Artificial, Activos Digitales y Quantum Computing. Un espacio donde bancos, startups, builders e inversionistas comparten el mismo escenario para hablar de Open Banking, blockchain aplicado, inteligencia artificial y el futuro cuántico — con paneles, masterclasses, demos de startups y networking real. Speakers: 🔹 Juan José Miranda — NTT Data, Director Innovation Center Blockchain/DLT/Web3 & Quantum Computing. Explicará cómo la Computación Cuántica está revolucionando Latinoamérica y el rol de la banca. Panelistas: 🔹 Willy Vega — Santander Consumer, Director de Tecnología para Negocios 🔹 Luis Berrospi — Credicorp, AI Engineer (equipo creador de MiBanco por WhatsApp) 🔹 Lenin Tarrillo — BCP, Product Owner Blockchain & Crypto 🔹 Miguel Gálvez — Pacífico Seguros, Líder de Inteligencia Artificial Novedades del Mundo Además, compartiremos insights y la visión global de distintas ciudades del mundo, junto con nuestro plan para conectar el ecosistema peruano con el resto del mundo. Startups Spotlight — Soluciones para el sector bancario: 🚀 Reevalúa — La IA que trabaja tus finanzas por ti. Tiene un agente que vive dentro del WhatsApp del usuario y hace el trabajo: ordena sus cuentas, negocia su deuda con la entidad y busca su crédito en más de 40 instituciones financieras. Más de 80 mil peruanos la usan. Ganadora del Premio Fintech a la Inclusión Financiera de Fintech Américas, ganador del premio avonni, a la innovación financiera. 🚀 Firmeasy — No vende firma digital: es la autoridad. Firmeasy es la primera startup peruana acreditada por Indecopi como Entidad Certificadora y Autoridad Selladora de Tiempo — el Estado peruano la reconoce con la misma categoría legal que usan bancos y notarías para emitir certificados digitales. Eso no se compra con capital, se gana con regulación. 🚀 Vigilantium — 15 años de experiencia corporativa convertidos en plataforma SaaS con IA. De consultora boutique a detectar vulnerabilidades antes de que se conviertan en incidentes. Ganadores de Startup Perú 10G, hoy protege empresas en México, Ecuador, Chile, Panamá y EE.UU. 🚀 Fimaki — Convierte las facturas en liquidez para las empresas que mueven el Perú. Es una fintech peruana que construye un ecosistema alrededor del factoring y el confirming: adelantar el cobro de facturas y financiar a proveedores. 📅 14 de octubre, 2026 | 5:00pm – 9:00pm 📍 UPC, San Isidro — Auditorio Luis Bustamante (Av. Gral. Felipe Salaverry 2255) Gracias a Laive , Café Britt , StartUPC , Tinkuy AI , Startups Perú y Laboral.AI por hacer posible este evento. Media partner: Emprende Valor . Organizado por AI Salon Lima , en el marco de Perú Tech Week .",
   "url": "https://luma.com/aisalon-5pmw"
  },
@@ -522,7 +237,7 @@
    "Alejandra Puente F",
    "Antonella Puntriano"
   ],
-  "guests": 31,
+  "guests": 30,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -540,7 +255,7 @@
    "MKT Community",
    "Gonzalo Dávalos"
   ],
-  "guests": 77,
+  "guests": 79,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -559,10 +274,10 @@
    "Elizabeth Tintaya",
    "NXTEP - Ops & Events"
   ],
-  "guests": 140,
+  "guests": 162,
   "status": "abierto",
   "approval": true,
-  "spots": 100,
+  "spots": 78,
   "description": "⚡ IA EN ACCIÓN De la estrategia a la práctica: casos reales de IA que ya están transformando negocios. Tres líderes. Tres industrias. Una conversación sobre lo que realmente está pasando detrás de la IA. Panelistas: 🎤 Diego Asmat — Gerente de Iniciativas Estratégicas IA, BCP 🎤 Diego Hinojosa — Product Owner, Credicorp Mibanco 🎤 Marleny Barrueta — Head of Advanced Analytics & AI, Antamina Moderador del panel: 🎤 Camila Ramos — Product Owner Core & IA, Pacífico Seguros Conversaremos sobre cómo están llevando la IA de la estrategia a la práctica : casos reales, impacto, retos de implementación y aprendizajes. Pero en NXTEP creemos que un evento no termina cuando acaba el panel. 🤝 La conversación continúa. Después del panel, abrimos un espacio de Networking & Bites : 🥂 bebidas 🍴 catering 💬 conversaciones 🤝 nuevas conexiones Un ambiente pensado para salir de la dinámica tradicional de conferencia y conectar con personas que también están explorando, construyendo y haciendo que la IA suceda. 📅 Miércoles 14 de octubre | 6:30 PM - 10:30PM 📍 Surco 🎟️ Precio Preventa: S/ 35 ( Precio Regular: S/ 60) La dirección exacta será compartida una vez aprobada tu inscripción. No es solo venir a escuchar. Es venir a conectar. NXTEP × Perú Tech Week",
   "url": "https://luma.com/39mwym77"
  },
@@ -594,11 +309,11 @@
   "hosts": [
    "Warmi Ventures"
   ],
-  "guests": 51,
+  "guests": 54,
   "status": "abierto",
   "approval": false,
   "spots": null,
-  "description": "Aprende a invertir y reconoce señales de alerta ante posibles fraudes Invertir no consiste en elegir la opción que promete la mayor rentabilidad. También implica comprender los riesgos, verificar quién ofrece la inversión y contar con criterios para reconocer posibles fraudes. En el marco de la Semana Mundial del Inversionista 2026 , Warmi Ventures y la Superintendencia del Mercado de Valores (SMV) presentan Invierte segura , una masterclass online diseñada para mujeres que desean dar sus primeros pasos en el mundo de las inversiones de manera informada y responsable. Durante la sesión aprenderás conceptos esenciales como rentabilidad, riesgo, diversificación y perfil de inversionista. Además, conocerás señales de alerta frecuentes, fuentes oficiales que puedes consultar y criterios básicos para verificar si una oportunidad o entidad es formal. Cerraremos con un ejercicio práctico en el que analizaremos casos ficticios de inversión para identificar posibles riesgos y aplicar lo aprendido. ¿Qué aprenderás? Diferencias entre ahorrar e invertir. Conceptos básicos de riesgo y rentabilidad. Cómo identificar tu perfil de inversionista. Por qué es importante diversificar. Señales de alerta ante posibles fraudes. Cómo verificar entidades y oportunidades de inversión. Fuentes oficiales para tomar decisiones informadas. No necesitas conocimientos previos sobre finanzas o inversiones. Agenda 7:00 p. m. Bienvenida y presentación de la masterclass 7:10 p. m. Fundamentos de inversión 7:40 p. m. Inversión segura y prevención de fraudes 8:10 p. m. Ejercicio práctico 8:20 p. m. Preguntas y respuestas 8:25 p. m. Recomendaciones finales 8:30 p. m. Cierre Información del evento 📅 Miércoles 14 de octubre de 2026 🕖 7:00 a 8:30 p. m. 💻 Modalidad virtual vía Zoom 🎟️ Participación gratuita con registro previo El enlace de acceso a Zoom será enviado a las personas registradas. Recomendamos conectarse algunos minutos antes del inicio. Organizan: Warmi Ventures y Superintendencia del Mercado de Valores (SMV) Regístrate y adquiere criterios prácticos para comenzar a invertir de forma más informada y segura.",
+  "description": "Aprende a invertir y reconoce señales de alerta ante posibles fraudes Invertir no consiste en elegir la opción que promete la mayor rentabilidad. También implica comprender los riesgos, verificar quién ofrece la inversión y contar con criterios para reconocer posibles fraudes. En el marco de la Semana Mundial del Inversionista 2026 , Warmi Ventures y la Superintendencia del Mercado de Valores (SMV) presentan Invierte segura , una masterclass online diseñada para mujeres que desean dar sus primeros pasos en el mundo de las inversiones de manera informada y responsable. Durante la sesión aprenderás conceptos esenciales como rentabilidad, riesgo, diversificación y perfil de inversionista. Además, conocerás señales de alerta frecuentes, fuentes oficiales que puedes consultar y criterios básicos para verificar si una oportunidad o entidad es formal. Cerraremos con un ejercicio práctico en el que analizaremos casos ficticios de inversión para identificar posibles riesgos y aplicar lo aprendido. ¿Qué aprenderás? Rol y supervisión de la SMV Mecanismos de protección formal Verificación de entidades autorizadas Detección de fraudes y nuevos riesgos digitales Canales de atención, reclamación y denuncia No necesitas conocimientos previos sobre finanzas o inversiones. Agenda 7:00 p. m. Bienvenida y presentación de la masterclass 7:59 p.m Cierre del contenido de la masterclass 8:00 p.m. Preguntas y respuestas 8:25 p. m. Agradecimientos y Recomendaciones finales 8:30 p. m. Cierre Información del evento 📅 Miércoles 14 de octubre de 2026 🕖 7:00 a 8:30 p. m. 💻 Modalidad virtual vía Zoom 🎟️ Participación gratuita con registro previo El enlace de acceso a Zoom será enviado a las personas registradas. Recomendamos conectarse algunos minutos antes del inicio. Organizan: Warmi Ventures y Superintendencia del Mercado de Valores (SMV) Regístrate y adquiere criterios prácticos para comenzar a invertir de forma más informada y segura.",
   "url": "https://luma.com/1tf4ke0t"
  },
  {
@@ -614,7 +329,7 @@
    "Yerika Rodriguez Felipe",
    "Grecia"
   ],
-  "guests": 112,
+  "guests": 121,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -685,7 +400,7 @@
    "Juan Víctor Silva Echandía"
   ],
   "guests": 55,
-  "status": "agotado",
+  "status": "lista de espera",
   "approval": true,
   "spots": 0,
   "description": "Un espacio de encuentro para fundadores, inversionistas, operadores gastronómicos y apasionados de la innovación alimentaria. Nos reunimos en el marco de la Perú Tech Week para debatir sobre el futuro de la industria y conocer soluciones tecnológicas en vivo. 📌 ¿Qué esperar del evento? Conversatorio: Panel con referentes del sector analizando tendencias, retos y oportunidades en la digitalización para la gestión y mejora continua de modelos de negocio en la industria del Foodtech y la gastronomía. Demo Day: Presentación en vivo de soluciones tecnológicas e iniciativas innovadoras que están transformando la experiencia gastronómica y de consumo. Networking: Conecta con líderes del ecosistema, emprendedores y actores clave de la industria tech y gastronómica en Perú. 📅 Detalles del evento Fecha: Jueves 15 de octubre Hora: 10:30 a.m. – 12:00 p.m. Lugar: Techhouse – Av. La Paz 1060, Miraflores, Lima Organiza: Tribu UX + Yumio.pe",
@@ -702,7 +417,7 @@
    "Diana Ortiz",
    "Joe Burkinshaw"
   ],
-  "guests": 106,
+  "guests": 122,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -755,7 +470,7 @@
    "GAMEDU TECH",
    "Mariojulio Osmín Zaldivar Alvarez"
   ],
-  "guests": 98,
+  "guests": 102,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -774,10 +489,10 @@
    "Alexander Coral",
    "Erick Ortiz"
   ],
-  "guests": 218,
+  "guests": 228,
   "status": "abierto",
-  "approval": true,
-  "spots": 32,
+  "approval": false,
+  "spots": 22,
   "description": "🌎 ¿Cómo cobraremos y pagaremos en el mundo del mañana? Stablecoins: el futuro de los pagos internacionales y la banca Imagina poder enviar dinero a otro país, pagar a un proveedor internacional o recibir el pago de un cliente del extranjero utilizando una infraestructura financiera digital. Esa es una de las posibilidades que están impulsando las stablecoins: activos digitales diseñados para mantener un valor estable, generalmente vinculado a una moneda como el dólar. Pero ¿cómo funcionan realmente? ¿Qué ventajas y riesgos presentan? ¿Qué deben saber las empresas que operan internacionalmente? ¿Y qué papel tendrán los bancos y los reguladores en esta evolución? No necesitas ser experto en blockchain ni trabajar en una empresa tecnológica para entender por qué este tema importa. Si tienes una empresa, cobras en dólares, pagas proveedores internacionales, trabajas con clientes del extranjero o simplemente quieres comprender hacia dónde evoluciona el sistema financiero, esta conversación es para ti. 🚀 ¿QUÉ DESCUBRIRÁS? 💸 Pagos internacionales: cómo las stablecoins podrían facilitar nuevas formas de transferir valor entre países y qué condiciones hacen viable su uso. 🏦 El futuro de la banca: qué oportunidades y desafíos plantea esta infraestructura para los bancos y los servicios financieros tradicionales. ⚖️ Regulación y confianza: qué debemos conocer sobre cumplimiento, riesgos, prevención del lavado de activos y protección de los usuarios. 🌐 Oportunidades para las empresas: qué preguntas deberían hacerse los empresarios antes de incorporar estas soluciones a sus operaciones. 🔗 Casos de uso reales: cómo se están explorando aplicaciones de blockchain y stablecoins en pagos y servicios financieros. 🎤 UNA CONVERSACIÓN ENTRE BANCA, REGULACIÓN Y TECNOLOGÍA En el marco de Perú Tech Week 2026, Horizonte Blockchain, la Asociación Blockchain & DLT Perú (ABPE) y la UPC reúnen al ecosistema para analizar los retos y las oportunidades de las stablecoins en la banca peruana. La jornada contará con un panel técnico-regulatorio, casos de uso y un espacio de preguntas y respuestas. La participación anunciada de la SBS y su Unidad de Inteligencia Financiera del Perú (UIF-Perú) permitirá incorporar la perspectiva de prevención del lavado de activos y supervisión dentro de la conversación. 📅 Jueves 15 de octubre de 2026 🕔 5:00 p. m. 📍 Auditorio UPC, campus San Isidro, Lima 🎟️ Ingreso gratuito con registro previo. No se trata de asumir que todo cambiará de un día para otro. Se trata de comprender los cambios que ya se están explorando, evaluar sus implicaciones y prepararse con información. El futuro de los pagos también es un tema de negocios. Ven a descubrir por qué. 🎟️ Regístrate y sé parte de la conversación. Organizan: Asociación Blockchain & DLT Perú (ABPE) Horizonte Blockchain.",
   "url": "https://luma.com/3pltzjex"
  },
@@ -794,10 +509,10 @@
    "Women Biz",
    "Base44"
   ],
-  "guests": 525,
+  "guests": 540,
   "status": "abierto",
   "approval": true,
-  "spots": 25,
+  "spots": 10,
   "description": "PERU AI MARKETING NIGHT Una noche para descubrir cómo la IA ya está cambiando el marketing, la creación de contenido y la forma en que construimos productos digitales. En el marco de Perú Tech Week 2026 , llega Peru AI Marketing Night , una experiencia organizada por Women Biz , junto a Base44 , Neural Brand para reunir a marketers, founders, builders, creators, líderes y profesionales que quieren entender —y experimentar— lo que ya es posible hacer con Inteligencia Artificial. No será una noche para hablar únicamente del futuro. Será una noche para ver casos reales, herramientas, automatizaciones, contenido generado con IA y aplicaciones construidas en tiempo récord . Desde cómo crear una campaña y producir contenido, hasta cómo automatizar procesos o convertir una idea en una app funcional con herramientas como Base44 . 📍 DETALLES DEL EVENTO 📅 Fecha: Jueves 15 de octubre ⏰ Hora: 7:00 PM – 11:00 PM 📍 Ubicación: Secret Location — Lima, Perú La ubicación será compartida únicamente con los asistentes confirmados. 🎟️ Evento gratuito — capacidad limitada 💡 ¿QUÉ PUEDES ESPERAR? 🤖 IA aplicada al marketing Descubre cómo equipos, creators y founders están usando IA para investigar, crear campañas, generar contenido y acelerar su trabajo. ⚡ Automatización + Agentes Conoce workflows y agentes capaces de apoyar procesos de contenido, distribución, seguimiento, operaciones y crecimiento. 📱 Build with AI Mira cómo una idea puede convertirse en una aplicación funcional utilizando Base44 , incluso sin empezar escribiendo código desde cero. 🎥 AI Content & Creators Cómo la IA está transformando la producción de imágenes, videos, copy y contenido para marcas y redes sociales. 🍸 Happy Hour & Networking Conecta en un ambiente relajado con founders, marketers, builders, creators, líderes y personas del ecosistema de tecnología e innovación. 🤝 Conexiones que pueden convertirse en algo más Proyectos, clientes, alianzas, colaboraciones, nuevas ideas o simplemente conocer a las personas que están experimentando con lo que viene. Panel 1: ¿La IA ya te reemplazó (o no? Innovación e IA en la gestión de equipos ✨ Fiorella Meza Díaz — Líder de Marketing en juztina.ai . ✨ Waldin Duran — Cluster Commercial Director Perú en Meliá Hotels International. ✨ Paola Paico — Innovación educativa en Saco Oliveros. ✨ Emanuel Caceres — Gerente de Transformación IA & Growth en RIMAC Seguros. Panel 2: Cobras muy barato - Convierte tu contenido en negocio ✨ Pierre Ríos — Fundador de Tu Brújula. ✨ Paola Escudero — Fundadora de Alucinando® Marketing. ✨ Joaquín Valcarcel — Gerente de Operaciones de Mercado Negro. 👀 Y un invitado sorpresa que pronto revelaremos. Panel 3: Nadie ve tu contenido - Crea contenido que engancha ✨ Barbara Llontop — CEO y cofundadora de iKonic. Marketing, creatividad y estrategia para hacer crecer negocios. ✨ Daniel Sánchez Oyarce — Creador digital y Senior Product Manager. Una mirada que conecta contenido, tecnología y producto. ✨ Brenda Ramírez — Fundadora de Soy Talentop. Empleabilidad y visibilidad profesional para abrir nuevas oportunidades. No necesitas ser developer. Solo tener curiosidad por entender cómo la IA puede ayudarte a crear, automatizar, comunicar o construir mejor. No es el futuro del marketing. Es el marketing que ya empezó. Women Biz × Base44 · Perú Tech Week 2026 . Neural Brand . Diego Innovación Eventos anteriores: 👉 Regístrate gratis y solicita tu cupo. Síguenos en: IG Women Biz: https://www.instagram.com/hiwomenbiz/ IG Neural Brand: https://www.instagram.com/neural_brand_ai/ Linkedin Women Biz: https://www.linkedin.com/company/womenbizlat Linkedin Neural Brand: https://pe.linkedin.com/company/neuralbrand-ai Aplica a nuestros bootcamps: Para mujeres: https://hiwomenbiz.com/#rutas Para crear tu app con IA: https://neuralbrand.us/academy/neural-ai",
   "url": "https://luma.com/xxxbibha"
  },
@@ -829,7 +544,7 @@
    "AECODE Ingeniería Moderna",
    "aecode.ai"
   ],
-  "guests": 330,
+  "guests": 338,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -849,10 +564,10 @@
    "Reevalúa",
    "Preauth"
   ],
-  "guests": 74,
+  "guests": 80,
   "status": "abierto",
   "approval": true,
-  "spots": 126,
+  "spots": 120,
   "description": "Chifa AI Una mesa. Buena comida. Gente construyendo AI. Nos juntamos alrededor de una mesa en un chifa para intercambiar ideas, experiencias y aprendizajes sobre inteligencia artificial. Un encuentro dirigido solo a desarrolladores, founders, actores tecnológicos y ejecutivos directamente involucrados en construir, implementar o liderar iniciativas de AI. La idea es simple: conversar entre pares sobre qué estamos construyendo, qué está funcionando, qué desafíos enfrentamos y qué viene después , en un ambiente relajado y con buena comida. Chifa AI es un encuentro curado. Las solicitudes de participación están sujetas a aprobación.",
   "url": "https://luma.com/4mtsdput"
  },
@@ -867,7 +582,7 @@
    "Angel Feijoo",
    "Carlos"
   ],
-  "guests": 11,
+  "guests": 13,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -904,7 +619,7 @@
   "hosts": [
    "Lucia Bailetti"
   ],
-  "guests": 181,
+  "guests": 191,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -978,10 +693,10 @@
    "Creative Friends Perú",
    "Women Biz"
   ],
-  "guests": 262,
+  "guests": 268,
   "status": "abierto",
   "approval": true,
-  "spots": 18,
+  "spots": 12,
   "description": "🌟 Women Community Fest – III Edición 🌟 Diez comunidades de mujeres se unen para crear una mañana de inspiración, aprendizaje y conexiones. Women Community Fest es un encuentro presencial que reúne a mujeres emprendedoras, profesionales, líderes y estudiantes interesadas en tecnología, negocios, liderazgo y desarrollo personal. Durante esta tercera edición tendremos: 💜 Panel sobre el poder de las comunidades 💡 Charlas breves con mujeres líderes ✨ Dinámica para fortalecer el mindset emprendedor 🤝 Networking para generar nuevas conexiones y oportunidades Organizan: Mujeres Líderes, Women Biz, Warmi Ventures, Maribecas, Comunidad de Mujeres en HR, Horizonte Blockchain, Creative Friends Perú, Avanti, Comunidad de Mujeres Emprendedoras y Evolving Hub. 📅 Viernes 16 de octubre de 2026 ⏰ De 9:00 a. m. a 1:00 p. m. 📍 Hub de Innovación de Miraflores Av. Larco 770, Miraflores 🎟️ Ingreso gratuito previa inscripción ⚠️ Cupos limitados: aforo máximo de 50 personas. Regístrate únicamente si cuentas con disponibilidad para asistir. Queremos que cada cupo pueda ser aprovechado por una mujer interesada en aprender, conectar y ser parte de esta experiencia.",
   "url": "https://luma.com/pzpt16f7"
  },
@@ -1018,10 +733,10 @@
    "Sergio Flores",
    "Karina Rosas"
   ],
-  "guests": 73,
+  "guests": 75,
   "status": "abierto",
   "approval": true,
-  "spots": 27,
+  "spots": 25,
   "description": "PERUINCUBA SUMMIT 2026 | De incubadoras a ecosistemas 🚀 Un encuentro que reúne a gestores de incubadoras, universidades y aliados del ecosistema para conectar oportunidades, compartir herramientas y construir nuevas posibilidades para el emprendimiento universitario en el Perú . Una mañana de inspiración, aprendizaje, networking e internacionalización , con expertos y aliados que están impulsando el futuro del ecosistema emprendedor. Horario: 9:00 a. m. – 1:00 p. m. 9:00 – 9:30 | Políticas de emprendimiento universitario y el futuro de las incubadoras del Perú: Panel sobre los retos, oportunidades y desafíos que vienen los próximos años en el ecosistema de emprendimiento universitario en el Perú. 9:30 – 10:00 | Aliados estratégicos del ecosistema: Presentación de beneficios y oportunidades para las incubadoras. 10:00 – 10:30 | Coffee Break & Networking 10:30 – 11:30 | Design Thinking con IA para gestores de incubadoras: Workshop práctico para fortalecer el liderazgo, los equipos y la articulación del ecosistema. 11:30 – 12:30 | Internacionalización y acción: Presentación sobre programas y conexiones internacionales. 12:30 – 13:00 | Cierre & Networking",
   "url": "https://luma.com/gkcg9w0a"
  },
@@ -1055,7 +770,7 @@
    "Club Blockchain UPC",
    "Blockchain Acceleration Foundation"
   ],
-  "guests": 170,
+  "guests": 180,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -1073,7 +788,7 @@
    "Gostartups",
    "Alaninnnovat"
   ],
-  "guests": 203,
+  "guests": 207,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -1113,26 +828,6 @@
   "spots": null,
   "description": "El concepto de bienestar corporativo ha evolucionado. Hoy en día, las estrategias de retención de talento y People & Culture buscan beneficios de alto impacto cotidiano que vayan más allá de los beneficios tradicionales. La salud de la piel y el cuidado personal impactan directamente en la confianza, la presencia y la salud integral de los colaboradores; sin embargo, acceder a rutinas dermoestéticas profesionales suele ser un proceso caótico, costoso y saturado de desinformación. En el marco del Perú Tech Week 2026 , presentamos oficialmente BryIA , la primera solución de salud dermoestética agéntica impulsada por IA , diseñada para convertirse en un beneficio corporativo innovador, accesible y de alta valoración para los equipos de trabajo. Durante esta sesión exclusiva para líderes de Gestión Humana, Bienestar y C-Level, mostraremos en vivo cómo BryIA analiza las características únicas de la piel de cada colaborador, genera rutinas profesionales a medida y busca en tiempo real la combinación perfecta de productos con stock disponible, el mejor precio del mercado y envío gestionado directamente a su domicilio . Asimismo, revelaremos la hoja de ruta que integra a médicos dermatólogos al ecosistema para consolidar a BryIA como una Super App de salud preventiva y correctiva para el entorno laboral.",
   "url": "https://luma.com/mk0lwkiz"
- },
- {
-  "id": "kxd231ti",
-  "name": "Teleférico Sunset by Reevalúa",
-  "start": "2026-10-16 16:00",
-  "end": "2026-10-16 19:45",
-  "city": "Miraflores",
-  "mode": "presencial",
-  "hosts": [
-   "Luis Chau",
-   "Reevalúa",
-   "Preauth",
-   "Sebastian Burgos"
-  ],
-  "guests": 160,
-  "status": "abierto",
-  "approval": true,
-  "spots": 90,
-  "description": "Reevalúa presenta: Teleférico Sunset Pitch & Networking Una experiencia única en el marco de Perú Tech Week Te subes al Teleférico y tienes 3 minutos para contar tu historia y conectar. Tres minutos. El sol cayendo sobre el Pacífico. Y frente a ti, las personas que pueden cambiar el rumbo de tu idea: corporativos, inversionistas, fundadores, funcionarios públicos y líderes del ecosistema, todos en el mismo lugar y con las mismas ganas de conversar. Teleférico Sunset Pitch & Networking es una experiencia nunca antes vivida en Lima, donde el ecosistema emprendedor tech y el mundo corporativo se encuentran sin barreras. Aquí las historias se cuentan en voz alta, las conversaciones se vuelven alianzas y las alianzas se convierten en transformación digital real. 🥂 Un agasajo para la comunidad Reevalúa Este atardecer también es nuestra forma de decir gracias. A nuestros clientes, aliados y comunidad Reevalúa, que han confiado en nosotros y son parte de este momentum, los queremos recibir como se merecen: con buena mesa, buena música y la mejor vista de Lima. Serán nuestros invitados de honor y tendrán la oportunidad de conectar con todo el ecosistema que hoy se reúne a su alrededor. 🤝 Una conversación de todos con todos Cuando corporativos, inversionistas, capital privado, gobierno, founders y enablers comparten un mismo atardecer, pasan cosas: un corporativo encuentra a su próximo aliado de innovación, un founder conoce a su primer inversionista, una política pública se cruza con quien puede ejecutarla. Aquí no hay pasillos ni jerarquías, solo sinergias que se activan en minutos. 🚀 ¿Qué vas a vivir? 🎤 Pitches de 3 minutos al sunset 🍸 Margaritas y Palomas de autor al atardecer 🍷 Pisco y Vino para brindar con sabor peruano 🎧 Beats que marcan el ritmo mientras cae el sol 🍽️ Bites para acompañar cada conversación ☕ Coffee a la brisa del mar 🥂 Un espacio de agasajo para clientes y comunidad Reevalúa 🤝 Networking multilateral entre todos los actores del ecosistema 🌊 Nuestro deck frente al mar , el mejor lugar para ver caer el sol y cerrar ideas ✨ ¿Por qué importa? Porque la innovación peruana necesita llegar a quienes toman decisiones, y quienes toman decisiones necesitan conocer el talento que está construyendo el futuro del país. Este es el punto de encuentro donde se escuchan, se entienden y se conectan. 👥 ¿A quién va dirigido? Clientes y comunidad Reevalúa (nuestros invitados de honor) Corporativos y líderes de innovación Inversionistas, VCs y capital privado Funcionarios públicos y sector gobierno Fundadores y startups Enablers del ecosistema: incubadoras, aceleradoras, academia y comunidades 🧠 Presenta: Reevalúa La fintech líder en inteligencia artificial para salud financiera con 100,000 usuarios en el Perú. Hoy queremos usar ese impulso para agradecer a quienes nos acompañan y conectarlos con el ecosistema que nos vio crecer. Después de ediciones exitosas de Sabor Tech, este año nos tomamos un respiro para relanzarlo muy pronto, pero la comunidad no se detiene. 😉 Con el apoyo de: Vaivén Teleférico, Lima Sour, Kendall Brasa. 🔥 Si estás construyendo, invirtiendo o transformando desde el Perú, este atardecer es para ti.",
-  "url": "https://luma.com/kxd231ti"
  },
  {
   "id": "ca4c0x3h",
@@ -1197,7 +892,7 @@
    "Nico Di Pace",
    "Elva"
   ],
-  "guests": 168,
+  "guests": 169,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -1235,7 +930,7 @@
    "Fiorella Cisneros",
    "Danitza Vilchez Rosas"
   ],
-  "guests": 61,
+  "guests": 62,
   "status": "lista de espera",
   "approval": true,
   "spots": 0,
@@ -1274,7 +969,7 @@
   "guests": 0,
   "status": "abierto",
   "approval": true,
-  "spots": 74,
+  "spots": 71,
   "description": "Construir a 3,500 metros es caro y es lento. Financiarlo, casi imposible. Las heladas, el transporte, los tiempos de obra. Y del otro lado, un terreno inscrito en SUNARP que ningún banco acepta como garantía suficiente. Miles de familias altoandinas tienen patrimonio y un negocio andando, pero no tienen boleta de pago. Por eso una vivienda digna termina siendo inalcanzable para la mayoría. En esta conferencia juntaremos las dos cosas: Plastidobe , un sistema constructivo ecológico cuyo primer refugio social se ha construido con el impulso de ProInnóvate, y Soluciones Ganadoras , un innovador sistema de financiamiento que sí llega a quien lo necesita. Perú Tech Week llega a Junín por primera vez y este es el único evento de la región. Datos 🗓️ Viernes 16 de octubre. Registro desde las 7:30 pm, inicio 8:00 pm, cierre 10:00 pm. Sábado 17 de octubre, de 10 am a 12 pm, visita al Refugio Plastidobe en Quichuay, a 40 minutos de Huancayo. Cupos limitados, escríbenos para coordinar el traslado. 📍 Auditorio de la Universidad Continental, Av. San Carlos 1980, Huancayo. 🎟️ Entrada libre. Aforo limitado y registro sujeto a aprobación. Organizan Soluciones Ganadoras , Pircanato , Continental International Education y Growth Center Continental . En el auditorio del campus Huancayo de la Universidad Continental , primera y única universidad del país certificada como Empresa B. Side Event Oficial de Perú Tech Week 2026. 🇵🇪 Este evento es de difusión de resultados técnicos. No constituye oferta ni promoción de ningún producto financiero.",
   "url": "https://luma.com/hi2rgota"
  },
@@ -1384,7 +1079,7 @@
    "Gianmarco Guerrero Menacho",
    "David"
   ],
-  "guests": 842,
+  "guests": 847,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -1420,7 +1115,7 @@
    "She Leads Data",
    "Ana Silvonio"
   ],
-  "guests": 115,
+  "guests": 119,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -1456,10 +1151,10 @@
    "Wally Benavente",
    "Christian"
   ],
-  "guests": 68,
+  "guests": 70,
   "status": "abierto",
   "approval": false,
-  "spots": 132,
+  "spots": 130,
   "description": "Somos más de lo que imaginas. Hay más personas intentando cambiar las cosas de las que imaginas. Personas que están creando herramientas, explorando nuevas ideas, aprendiendo de sus errores y buscando nuevas formas de resolver los problemas que compartimos. Este 17 de octubre queremos reunirlas contigo. Ven a descubrir qué están haciendo, conocer sus historias, conversar sobre los problemas que nos importan y conectar con personas con las que podrías hacer algo. Quizá descubras una idea que no conocías. Quizá encuentres a alguien con quien seguir conversando. Quizá salgas pensando: “Yo también quiero ser parte.” ¿Qué vamos a vivir? 9:30 — DESCUBRIR La evolución del ecosistema CivicTech en el Perú Descubre cómo nuevas tecnologías, comunidades e innovación están abriendo nuevas formas de abordar problemas públicos. 9:45 — CONOCER Historias de personas intentando cambiar las cosas Conoce a las personas detrás de ChecaBien, GoberLab, VotaBien, Plaza Cívica, Ojo Público y Repensar. No solo lo que hicieron, sino por qué lo intentaron, qué aprendieron y qué todavía quieren transformar. 11:15 — CONECTAR ¿Qué problema te importa? ¿Con quién podrías hacer algo? Un espacio para conversar, compartir lo que nos mueve y encontrar personas con intereses, experiencias o ideas que podrían complementarse con las nuestras. 11:45 — IMAGINAR ¿Qué podría ser posible si más personas decidimos ser parte? Una conversación sobre el futuro del sector CivicTech y las posibilidades que podemos explorar juntos. 12:30 — CIERRE Queremos que salgas con nuevas preguntas, nuevas conexiones y ganas de seguir explorando. ##Somos más de lo que imaginas.",
   "url": "https://luma.com/hz8o62o3"
  },
@@ -1532,7 +1227,7 @@
    "LEAD UTP",
    "Daniel Ibañez"
   ],
-  "guests": 329,
+  "guests": 338,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -1569,7 +1264,7 @@
    "Dev3pack Perú 🇵🇪",
    "Sofia Team1"
   ],
-  "guests": 24,
+  "guests": 28,
   "status": "abierto",
   "approval": true,
   "spots": null,
