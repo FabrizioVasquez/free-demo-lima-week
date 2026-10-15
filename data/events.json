@@ -1,23 +1,5 @@
 [
  {
-  "id": "0w7yjnmd",
-  "name": "Perú Business Fest 2026",
-  "start": "2026-10-14 10:00",
-  "end": "2026-10-17 17:30",
-  "city": "San Borja",
-  "mode": "presencial",
-  "hosts": [
-   "Franklin Cerna",
-   "Daniel Calderón Taramona"
-  ],
-  "guests": 0,
-  "status": "abierto",
-  "approval": true,
-  "spots": null,
-  "description": "El Perú Business Fest , organizado por COFIDE, es un festival empresarial que reúne a emprendedores, MYPEs y startups para impulsar su crecimiento a través del acceso a soluciones tecnológicas, herramientas financieras e inteligencia artificial. Durante el evento encontrarás conferencias magistrales, talleres prácticos, asesorías personalizadas y espacios de networking , como los hubs Escala e Innova, que facilitan la conexión con socios estratégicos y proveedores. 🎟️ IMPORTANTE: COMPRA DE ENTRADAS La inscripción a través de Luma no confirma tu asistencia al evento. Para asistir al Perú Business Fest , es obligatorio adquirir tu entrada a través de Joinnus . Los registros realizados mediante Luma no serán aprobados ni considerados como entradas válidas . 👉 Compra tu entrada aquí: https://www.joinnus.com/events/festivales/lima-peru-business-fest-78791 ¡Nos vemos en el Perú Business Fest!",
-  "url": "https://luma.com/0w7yjnmd"
- },
- {
   "id": "msuif92v",
   "name": "Perú Venture Capital Conference",
   "start": "2026-10-15 08:00",
@@ -80,7 +62,7 @@
   "hosts": [
    "Juan Víctor Silva Echandía"
   ],
-  "guests": 61,
+  "guests": 60,
   "status": "agotado",
   "approval": true,
   "spots": 0,
@@ -98,7 +80,7 @@
    "Diana Ortiz",
    "Joe Burkinshaw"
   ],
-  "guests": 141,
+  "guests": 161,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -151,7 +133,7 @@
    "GAMEDU TECH",
    "Mariojulio Osmín Zaldivar Alvarez"
   ],
-  "guests": 123,
+  "guests": 126,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -170,10 +152,10 @@
    "Alexander Coral",
    "Erick Ortiz"
   ],
-  "guests": 274,
-  "status": "abierto",
-  "approval": true,
-  "spots": 26,
+  "guests": 296,
+  "status": "agotado",
+  "approval": false,
+  "spots": 4,
   "description": "🌎 ¿Cómo cobraremos y pagaremos en el mundo del mañana? Stablecoins: el futuro de los pagos internacionales y la banca Imagina poder enviar dinero a otro país, pagar a un proveedor internacional o recibir el pago de un cliente del extranjero utilizando una infraestructura financiera digital. Esa es una de las posibilidades que están impulsando las stablecoins: activos digitales diseñados para mantener un valor estable, generalmente vinculado a una moneda como el dólar. Pero ¿cómo funcionan realmente? ¿Qué ventajas y riesgos presentan? ¿Qué deben saber las empresas que operan internacionalmente? ¿Y qué papel tendrán los bancos y los reguladores en esta evolución? No necesitas ser experto en blockchain ni trabajar en una empresa tecnológica para entender por qué este tema importa. Si tienes una empresa, cobras en dólares, pagas proveedores internacionales, trabajas con clientes del extranjero o simplemente quieres comprender hacia dónde evoluciona el sistema financiero, esta conversación es para ti. 🚀 ¿QUÉ DESCUBRIRÁS? 💸 Pagos internacionales: cómo las stablecoins podrían facilitar nuevas formas de transferir valor entre países y qué condiciones hacen viable su uso. 🏦 El futuro de la banca: qué oportunidades y desafíos plantea esta infraestructura para los bancos y los servicios financieros tradicionales. ⚖️ Regulación y confianza: qué debemos conocer sobre cumplimiento, riesgos, prevención del lavado de activos y protección de los usuarios. 🌐 Oportunidades para las empresas: qué preguntas deberían hacerse los empresarios antes de incorporar estas soluciones a sus operaciones. 🔗 Casos de uso reales: cómo se están explorando aplicaciones de blockchain y stablecoins en pagos y servicios financieros. 🎤 UNA CONVERSACIÓN ENTRE BANCA, REGULACIÓN Y TECNOLOGÍA En el marco de Perú Tech Week 2026, Horizonte Blockchain, la Asociación Blockchain & DLT Perú (ABPE) y la UPC reúnen al ecosistema para analizar los retos y las oportunidades de las stablecoins en la banca peruana. La jornada contará con un panel técnico-regulatorio, casos de uso y un espacio de preguntas y respuestas. La participación anunciada de la SBS y su Unidad de Inteligencia Financiera del Perú (UIF-Perú) permitirá incorporar la perspectiva de prevención del lavado de activos y supervisión dentro de la conversación. 📅 Jueves 15 de octubre de 2026 🕔 5:00 p. m. 📍 Auditorio UPC, campus San Isidro, Lima 🎟️ Ingreso gratuito con registro previo. No se trata de asumir que todo cambiará de un día para otro. Se trata de comprender los cambios que ya se están explorando, evaluar sus implicaciones y prepararse con información. El futuro de los pagos también es un tema de negocios. Ven a descubrir por qué. 🎟️ Regístrate y sé parte de la conversación. Organizan: Asociación Blockchain & DLT Perú (ABPE) Horizonte Blockchain.",
   "url": "https://luma.com/3pltzjex"
  },
@@ -190,11 +172,11 @@
    "Women Biz",
    "Base44"
   ],
-  "guests": 647,
+  "guests": 702,
   "status": "abierto",
   "approval": true,
-  "spots": 53,
-  "description": "PERU AI MARKETING NIGHT Una noche para descubrir cómo la IA ya está cambiando el marketing, la creación de contenido y la forma en que construimos productos digitales. En el marco de Perú Tech Week 2026 , llega Peru AI Marketing Night , una experiencia organizada por Women Biz , junto a Base44 , Neural Brand para reunir a marketers, founders, builders, creators, líderes y profesionales que quieren entender —y experimentar— lo que ya es posible hacer con Inteligencia Artificial. No será una noche para hablar únicamente del futuro. Será una noche para ver casos reales, herramientas, automatizaciones, contenido generado con IA y aplicaciones construidas en tiempo récord . Desde cómo crear una campaña y producir contenido, hasta cómo automatizar procesos o convertir una idea en una app funcional con herramientas como Base44 . 📍 DETALLES DEL EVENTO 📅 Fecha: Jueves 15 de octubre ⏰ Hora: 7:00 PM – 11:00 PM 📍 Ubicación: Secret Location — Lima, Perú La ubicación será compartida únicamente con los asistentes confirmados. 🎟️ Evento gratuito — capacidad limitada 💡 ¿QUÉ PUEDES ESPERAR? 🤖 IA aplicada al marketing Descubre cómo equipos, creators y founders están usando IA para investigar, crear campañas, generar contenido y acelerar su trabajo. ⚡ Automatización + Agentes Conoce workflows y agentes capaces de apoyar procesos de contenido, distribución, seguimiento, operaciones y crecimiento. 📱 Build with AI Mira cómo una idea puede convertirse en una aplicación funcional utilizando Base44 , incluso sin empezar escribiendo código desde cero. 🎥 AI Content & Creators Cómo la IA está transformando la producción de imágenes, videos, copy y contenido para marcas y redes sociales. 🍸 Happy Hour & Networking Conecta en un ambiente relajado con founders, marketers, builders, creators, líderes y personas del ecosistema de tecnología e innovación. 🤝 Conexiones que pueden convertirse en algo más Proyectos, clientes, alianzas, colaboraciones, nuevas ideas o simplemente conocer a las personas que están experimentando con lo que viene. Panel 1: ¿La IA ya te reemplazó (o no? Innovación e IA en la gestión de equipos ✨ Fiorella Meza Díaz — Líder de Marketing en juztina.ai . ✨ Waldin Duran — Cluster Commercial Director Perú en Meliá Hotels International. ✨ Paola Paico — Innovación educativa en Saco Oliveros. ✨ Emanuel Caceres — Gerente de Transformación IA & Growth en RIMAC Seguros. Panel 2: Cobras muy barato - Convierte tu contenido en negocio ✨ Pierre Ríos — Fundador de Tu Brújula. ✨ Paola Escudero — Fundadora de Alucinando® Marketing. ✨ Joaquín Valcarcel — Gerente de Operaciones de Mercado Negro. 👀 Y un invitado sorpresa que pronto revelaremos. Panel 3: Nadie ve tu contenido - Crea contenido que engancha ✨ Barbara Llontop — CEO y cofundadora de iKonic. Marketing, creatividad y estrategia para hacer crecer negocios. ✨ Daniel Sánchez Oyarce — Creador digital y Senior Product Manager. Una mirada que conecta contenido, tecnología y producto. ✨ Brenda Ramírez — Fundadora de Soy Talentop. Empleabilidad y visibilidad profesional para abrir nuevas oportunidades. No necesitas ser developer. Solo tener curiosidad por entender cómo la IA puede ayudarte a crear, automatizar, comunicar o construir mejor. No es el futuro del marketing. Es el marketing que ya empezó. Women Biz × Base44 · Perú Tech Week 2026 . Neural Brand . Diego Innovación Eventos anteriores: 👉 Regístrate gratis y solicita tu cupo. Síguenos en: IG Women Biz: https://www.instagram.com/hiwomenbiz/ IG Neural Brand: https://www.instagram.com/neural_brand_ai/ Linkedin Women Biz: https://www.linkedin.com/company/womenbizlat Linkedin Neural Brand: https://pe.linkedin.com/company/neuralbrand-ai Aplica a nuestros bootcamps: Para mujeres: https://hiwomenbiz.com/#rutas Para crear tu app con IA: https://neuralbrand.us/academy/neural-ai",
+  "spots": 18,
+  "description": "PERU AI MARKETING NIGHT Una noche para descubrir cómo la IA ya está cambiando el marketing, la creación de contenido y la forma en que construimos productos digitales. En el marco de Perú Tech Week 2026 , llega Peru AI Marketing Night , una experiencia organizada por Women Biz , junto a Base44 , Neural Brand para reunir a marketers, founders, builders, creators, líderes y profesionales que quieren entender —y experimentar— lo que ya es posible hacer con Inteligencia Artificial. No será una noche para hablar únicamente del futuro. Será una noche para ver casos reales, herramientas, automatizaciones, contenido generado con IA y aplicaciones construidas en tiempo récord . Desde cómo crear una campaña y producir contenido, hasta cómo automatizar procesos o convertir una idea en una app funcional con herramientas como Base44 . 📍 DETALLES DEL EVENTO 📅 Fecha: Jueves 15 de octubre ⏰ Hora: 6:00 PM – 10:00 PM 📍 Ubicación: Secret Location — Lima, Perú La ubicación será compartida únicamente con los asistentes confirmados. 🎟️ Evento gratuito — capacidad limitada 💡 ¿QUÉ PUEDES ESPERAR? 🤖 IA aplicada al marketing Descubre cómo equipos, creators y founders están usando IA para investigar, crear campañas, generar contenido y acelerar su trabajo. ⚡ Automatización + Agentes Conoce workflows y agentes capaces de apoyar procesos de contenido, distribución, seguimiento, operaciones y crecimiento. 📱 Build with AI Mira cómo una idea puede convertirse en una aplicación funcional utilizando Base44 , incluso sin empezar escribiendo código desde cero. 🎥 AI Content & Creators Cómo la IA está transformando la producción de imágenes, videos, copy y contenido para marcas y redes sociales. 🍸 Happy Hour & Networking Conecta en un ambiente relajado con founders, marketers, builders, creators, líderes y personas del ecosistema de tecnología e innovación. 🤝 Conexiones que pueden convertirse en algo más Proyectos, clientes, alianzas, colaboraciones, nuevas ideas o simplemente conocer a las personas que están experimentando con lo que viene. Panel 1: ¿La IA ya te reemplazó (o no? Innovación e IA en la gestión de equipos ✨ Fiorella Meza Díaz — Líder de Marketing en juztina.ai . ✨ Waldin Duran — Cluster Commercial Director Perú en Meliá Hotels International. ✨ Paola Paico — Innovación educativa en Saco Oliveros. ✨ Emanuel Caceres — Gerente de Transformación IA & Growth en RIMAC Seguros. Panel 2: Cobras muy barato - Convierte tu contenido en negocio ✨ Pierre Ríos — Fundador de Tu Brújula. ✨ Paola Escudero — Fundadora de Alucinando® Marketing. ✨ Joaquín Valcarcel — Gerente de Operaciones de Mercado Negro. 👀 Y un invitado sorpresa que pronto revelaremos. Panel 3: Nadie ve tu contenido - Crea contenido que engancha ✨ Barbara Llontop — CEO y cofundadora de iKonic. Marketing, creatividad y estrategia para hacer crecer negocios. ✨ Daniel Sánchez Oyarce — Creador digital y Senior Product Manager. Una mirada que conecta contenido, tecnología y producto. ✨ Brenda Ramírez — Fundadora de Soy Talentop. Empleabilidad y visibilidad profesional para abrir nuevas oportunidades. No necesitas ser developer. Solo tener curiosidad por entender cómo la IA puede ayudarte a crear, automatizar, comunicar o construir mejor. No es el futuro del marketing. Es el marketing que ya empezó. Women Biz × Base44 · Perú Tech Week 2026 . Neural Brand . Diego Innovación Eventos anteriores: 👉 Regístrate gratis y solicita tu cupo. Síguenos en: IG Women Biz: https://www.instagram.com/hiwomenbiz/ IG Neural Brand: https://www.instagram.com/neural_brand_ai/ Linkedin Women Biz: https://www.linkedin.com/company/womenbizlat Linkedin Neural Brand: https://pe.linkedin.com/company/neuralbrand-ai Aplica a nuestros bootcamps: Para mujeres: https://hiwomenbiz.com/#rutas Para crear tu app con IA: https://neuralbrand.us/academy/neural-ai",
   "url": "https://luma.com/xxxbibha"
  },
  {
@@ -207,7 +189,7 @@
   "hosts": [
    "Ros Ferrer"
   ],
-  "guests": 146,
+  "guests": 174,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -245,10 +227,10 @@
    "Reevalúa",
    "Preauth"
   ],
-  "guests": 83,
+  "guests": 84,
   "status": "abierto",
   "approval": true,
-  "spots": 117,
+  "spots": 116,
   "description": "Chifa AI Una mesa. Buena comida. Gente construyendo AI. Nos juntamos alrededor de una mesa en un chifa para intercambiar ideas, experiencias y aprendizajes sobre inteligencia artificial. Un encuentro dirigido solo a desarrolladores, founders, actores tecnológicos y ejecutivos directamente involucrados en construir, implementar o liderar iniciativas de AI. La idea es simple: conversar entre pares sobre qué estamos construyendo, qué está funcionando, qué desafíos enfrentamos y qué viene después , en un ambiente relajado y con buena comida. Chifa AI es un encuentro curado. Las solicitudes de participación están sujetas a aprobación.",
   "url": "https://luma.com/4mtsdput"
  },
@@ -263,11 +245,11 @@
    "Angel Feijoo",
    "Carlos"
   ],
-  "guests": 21,
+  "guests": 25,
   "status": "abierto",
   "approval": false,
   "spots": null,
-  "description": "✦ Personaliza este luma Antes de publicar tu evento, asegúrate de completar y revisar toda la información: Imagen de portada: reemplaza la imagen por el header/post de tu evento. Nombre del evento: coloca el nombre oficial de tu actividad. Fecha: verifica que corresponda a la fecha previamente registrada. Horario: indica correctamente la hora de inicio y de finalización . Ubicación: agrega la dirección o lugar donde se realizará el evento. Descripción: completa una descripción clara con toda la información relevante para los asistentes. Entradas: indica si el evento es gratuito o con costo y, de corresponder, agrega el precio. Registro: configura si los asistentes pueden registrarse libremente o si requieren aprobación para participar. Hosts: agrega a los co-hosts o miembros del equipo organizador que también estarán a cargo del evento. Una vez que hayas completado toda la información, revisa cuidadosamente que los datos sean correctos y que la configuración del evento sea la adecuada. Finalmente, cambia el evento a Público (Public) para que pueda ser visible y compartido como parte de Perú Tech Week 2026 . 🇵🇪",
+  "description": "¿Qué es la Hackathon futurX? Es un programa de aprendizaje intensivo sobre las nuevas herramientas de Inteligencia Artificial (IA) sumado a una competencia donde se usará la IA para desarrollar prototipos de soluciones a problemas reales de la sociedad. El evento es organizado por JGM Innovation (EE. UU.) y futurX Perú bajo la dirección del ingeniero peruano Angel Feijoo. Se realizará del 14 al 24 de octubre de 2026, de manera virtual, y tendrá una sesión presencial opcional el 24 de octubre en la universidad UTP en Lima, Perú.",
   "url": "https://luma.com/0dd7v66c"
  },
  {
@@ -300,7 +282,7 @@
   "hosts": [
    "Lucia Bailetti"
   ],
-  "guests": 237,
+  "guests": 249,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -320,10 +302,10 @@
    "Maria Pia Morante",
    "Alejandro Arenas"
   ],
-  "guests": 28,
+  "guests": 30,
   "status": "abierto",
   "approval": true,
-  "spots": 22,
+  "spots": 20,
   "description": "Un espacio exclusivo para conectar con inversionistas y conocer las alternativas de equity y deuda que pueden impulsar el crecimiento de tu fintech. Junto a ALIVE Ventures y Community Investment Management (CIM), conversaremos sobre qué buscan hoy los inversionistas, cuándo levantar capital y cómo preparar tu fintech para escalar con impacto. Cupos limitados. Asistencia sujeta a confirmación.",
   "url": "https://luma.com/yxokygx2"
  },
@@ -374,10 +356,10 @@
    "Creative Friends Perú",
    "Women Biz"
   ],
-  "guests": 292,
+  "guests": 304,
   "status": "abierto",
   "approval": true,
-  "spots": 8,
+  "spots": 6,
   "description": "🌟 Women Community Fest – III Edición 🌟 Diez comunidades de mujeres se unen para crear una mañana de inspiración, aprendizaje y conexiones. Women Community Fest es un encuentro presencial que reúne a mujeres emprendedoras, profesionales, líderes y estudiantes interesadas en tecnología, negocios, liderazgo y desarrollo personal. Durante esta tercera edición tendremos: 💜 Panel sobre el poder de las comunidades 💡 Charlas breves con mujeres líderes ✨ Dinámica para fortalecer el mindset emprendedor 🤝 Networking para generar nuevas conexiones y oportunidades Organizan: Mujeres Líderes, Women Biz, Warmi Ventures, Maribecas, Comunidad de Mujeres en HR, Horizonte Blockchain, Creative Friends Perú, Avanti, Comunidad de Mujeres Emprendedoras y Evolving Hub. 📅 Viernes 16 de octubre de 2026 ⏰ De 9:00 a. m. a 1:00 p. m. 📍 Hub de Innovación de Miraflores Av. Larco 770, Miraflores 🎟️ Ingreso gratuito previa inscripción ⚠️ Cupos limitados: aforo máximo de 50 personas. Regístrate únicamente si cuentas con disponibilidad para asistir. Queremos que cada cupo pueda ser aprovechado por una mujer interesada en aprender, conectar y ser parte de esta experiencia.",
   "url": "https://luma.com/pzpt16f7"
  },
@@ -451,7 +433,7 @@
    "Club Blockchain UPC",
    "Blockchain Acceleration Foundation"
   ],
-  "guests": 206,
+  "guests": 213,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -469,7 +451,7 @@
    "Gostartups",
    "Alaninnnovat"
   ],
-  "guests": 231,
+  "guests": 233,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -509,7 +491,7 @@
   "guests": 0,
   "status": "abierto",
   "approval": true,
-  "spots": 39,
+  "spots": 35,
   "description": "Reevalúa presenta: Teleférico Sunset Pitch & Networking Una experiencia única en el marco de Perú Tech Week Te subes al Teleférico y tienes 3 minutos para contar tu historia y conectar. Tres minutos. El sol cayendo sobre el Pacífico. Y frente a ti, las personas que pueden cambiar el rumbo de tu idea: corporativos, inversionistas, fundadores, funcionarios públicos y líderes del ecosistema, todos en el mismo lugar y con las mismas ganas de conversar. Teleférico Sunset Pitch & Networking es una experiencia nunca antes vivida en Lima, donde el ecosistema emprendedor tech y el mundo corporativo se encuentran sin barreras. Aquí las historias se cuentan en voz alta, las conversaciones se vuelven alianzas y las alianzas se convierten en transformación digital real. 🥂 Un agasajo para la comunidad Reevalúa Este atardecer también es nuestra forma de decir gracias. A nuestros clientes, aliados y comunidad Reevalúa, que han confiado en nosotros y son parte de este momentum, los queremos recibir como se merecen: con buena mesa, buena música y la mejor vista de Lima. Serán nuestros invitados de honor y tendrán la oportunidad de conectar con todo el ecosistema que hoy se reúne a su alrededor. 🤝 Una conversación de todos con todos Cuando corporativos, inversionistas, capital privado, gobierno, founders y enablers comparten un mismo atardecer, pasan cosas: un corporativo encuentra a su próximo aliado de innovación, un founder conoce a su primer inversionista, una política pública se cruza con quien puede ejecutarla. Aquí no hay pasillos ni jerarquías, solo sinergias que se activan en minutos. 🚀 ¿Qué vas a vivir? 🎤 Pitches de 3 minutos al sunset 🍸 Margaritas y Palomas de autor al atardecer 🍷 Pisco y Vino para brindar con sabor peruano 🎧 Beats que marcan el ritmo mientras cae el sol 🍽️ Bites para acompañar cada conversación ☕ Coffee a la brisa del mar 🥂 Un espacio de agasajo para clientes y comunidad Reevalúa 🤝 Networking multilateral entre todos los actores del ecosistema 🌊 Nuestro deck frente al mar , el mejor lugar para ver caer el sol y cerrar ideas ✨ ¿Por qué importa? Porque la innovación peruana necesita llegar a quienes toman decisiones, y quienes toman decisiones necesitan conocer el talento que está construyendo el futuro del país. Este es el punto de encuentro donde se escuchan, se entienden y se conectan. 👥 ¿A quién va dirigido? Clientes y comunidad Reevalúa (nuestros invitados de honor) Corporativos y líderes de innovación Inversionistas, VCs y capital privado Funcionarios públicos y sector gobierno Fundadores y startups Enablers del ecosistema: incubadoras, aceleradoras, academia y comunidades 🧠 Presenta: Reevalúa La fintech líder en inteligencia artificial para salud financiera con 100,000 usuarios en el Perú. Hoy queremos usar ese impulso para agradecer a quienes nos acompañan y conectarlos con el ecosistema que nos vio crecer. Después de ediciones exitosas de Sabor Tech, este año nos tomamos un respiro para relanzarlo muy pronto, pero la comunidad no se detiene. 😉 Con el apoyo de: Vaivén Teleférico, María Mezcal, Intipalka, Puku Puku y Kendall Brasa. 🔥 Si estás construyendo, invirtiendo o transformando desde el Perú, este atardecer es para ti.",
   "url": "https://luma.com/kxd231ti"
  },
@@ -687,7 +669,7 @@
    "Luis Vera",
    "Antoni Requejo"
   ],
-  "guests": 4,
+  "guests": 5,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -745,7 +727,7 @@
    "UTEC Ventures",
    "Javier Hernández"
   ],
-  "guests": 234,
+  "guests": 264,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -783,7 +765,7 @@
    "Gianmarco Guerrero Menacho",
    "David"
   ],
-  "guests": 982,
+  "guests": 998,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -801,7 +783,7 @@
    "She Leads Data",
    "Ana Silvonio"
   ],
-  "guests": 150,
+  "guests": 151,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -840,7 +822,7 @@
   "guests": 0,
   "status": "abierto",
   "approval": false,
-  "spots": 29,
+  "spots": 27,
   "description": "Somos más de lo que imaginas. Hay más personas intentando cambiar las cosas de las que imaginas. Personas que están creando herramientas, explorando nuevas ideas, aprendiendo de sus errores y buscando nuevas formas de resolver los problemas que compartimos. Este 17 de octubre queremos reunirlas contigo. Ven a descubrir qué están haciendo, conocer sus historias, conversar sobre los problemas que nos importan y conectar con personas con las que podrías hacer algo. Quizá descubras una idea que no conocías. Quizá encuentres a alguien con quien seguir conversando. Quizá salgas pensando: “Yo también quiero ser parte.” ¿Qué vamos a vivir? 9:30 — DESCUBRIR La evolución del ecosistema CivicTech en el Perú Descubre cómo nuevas tecnologías, comunidades e innovación están abriendo nuevas formas de abordar problemas públicos. 9:45 — CONOCER Historias de personas intentando cambiar las cosas Conoce a las personas detrás de ChecaBien, GoberLab, VotaBien, Plaza Cívica, Ojo Público y Repensar. No solo lo que hicieron, sino por qué lo intentaron, qué aprendieron y qué todavía quieren transformar. 11:15 — CONECTAR ¿Qué problema te importa? ¿Con quién podrías hacer algo? Un espacio para conversar, compartir lo que nos mueve y encontrar personas con intereses, experiencias o ideas que podrían complementarse con las nuestras. 11:45 — IMAGINAR ¿Qué podría ser posible si más personas decidimos ser parte? Una conversación sobre el futuro del sector CivicTech y las posibilidades que podemos explorar juntos. 12:30 — CIERRE Queremos que salgas con nuevas preguntas, nuevas conexiones y ganas de seguir explorando. ##Somos más de lo que imaginas.",
   "url": "https://luma.com/hz8o62o3"
  },
@@ -912,7 +894,7 @@
    "Benjamin Pareja Meruvia",
    "Ignacio Velasquez"
   ],
-  "guests": 30,
+  "guests": 32,
   "status": "abierto",
   "approval": false,
   "spots": null,
@@ -932,7 +914,7 @@
    "LEAD UTP",
    "Daniel Ibañez"
   ],
-  "guests": 358,
+  "guests": 367,
   "status": "abierto",
   "approval": true,
   "spots": null,
@@ -969,7 +951,7 @@
    "Dev3pack Perú 🇵🇪",
    "Sofia Team1"
   ],
-  "guests": 48,
+  "guests": 50,
   "status": "abierto",
   "approval": true,
   "spots": null,
