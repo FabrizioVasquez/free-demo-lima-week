@@ -17,7 +17,7 @@ btw = "brujula.cli:main"
 
 [project.optional-dependencies]
 browser = [
-    "crawl4ai>=0.7",
+    "crawl4ai>=0.9.5",
 ]
 
 [build-system]
