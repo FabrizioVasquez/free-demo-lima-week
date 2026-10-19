@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Brújula Tech Week: recomendador semántico local de eventos de Perú Tech Week 2026"
 requires-python = ">=3.11,<3.14"
 dependencies = [
-    "fastapi>=0.115",
+    "fastapi>=0.143.3",
     "uvicorn>=0.30",
     "httpx>=0.27",
     "qdrant-client>=1.12",
